@@ -169,11 +169,11 @@ df_3 <- df_2 %>%
  
  **Me and R and ggplot:**
  
- ![useful image]({{ site.url }}/assets/ageplot4.png)
+ <img src="/img/blog/ageplot4.png" alt="ggageplot" align="center"/> 
  
  **Bostock and JS and d3.js**
  
- ![useful image]({{ site.url }}/assets/bostockage.png)
+<img src="/img/blog/bostockage.png" alt="bostockageplot" align="center"/> 
  
  My colors are a little off, I didn't push the 'Age' axis title above the ticks, and nor did I try mirror Bostock's age axis ticks. But besides those three minor details, I think it's a faithful imitation! 
  
