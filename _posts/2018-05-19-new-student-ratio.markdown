@@ -305,8 +305,8 @@ ggplot(all_quarters, aes(quarter, students, fill = student)) +
   
 {% endhighlight %}
 
-![student ratios]({{ site.url }}/img/ratioplot.png)]({{ site.url }}/img/ratioplot.png)
- 
+[![student ratios]({{ site.url }}/img/blog/ratioplot.png)]({{ site.url }}/img/blog/ratioplot.png)
+
  Obviously in this closed, generated data, the proportion of returning students grows with each successive quarter. But with
  some additional tinkering, some interesting, seasonal, patterns may emerge.
  
