@@ -1,0 +1,37 @@
+---
+layout: post
+title:  "CAIR 2016 Recap"
+date:   2016-11-19 2:30:02 -0700
+categories: Post
+tags: R education 
+---
+
+Last week I had the good fortune of attending my first CAIR--no, not the Council on American-Islamic Relations, but the [California
+Association for Institutional Research.](http://www.cair.org/) Over 300 administrators, analysts, and data nerds decended upon the Millenium Biltmore Hotel in Los Angeles
+to network, share tips and tricks, and even watch a live shoot of ABC's *The Catch.* 
+
+<!--more-->
+
+From the beginning, it was clear R was still relegated to the fringe: R was unconscionably omitted from the "favorite statistics
+package" group mingling session, Tableau was the visualization software of choice, and of the hundred or so odd sessions, only three were about R. They were:
+
+* Creating Dashboards of Direct and Indirect SLOs Measures in R (Boosalis, Myhre & Binod)
+* R for Everything: Getting, Cleaning, Analyzing, and Visualizing Data (Ranzolin)
+* Leveraging the power of regression discontinuity designs for program evaluation: an institutional simulation using R (Orona)
+
+I can't speak for my own, but the first and last presentations were superb. If interested, [I've uploaded my presentation to RPubs here.](http://rpubs.com/daranzolin/cair-2016-slides)
+Session description below:
+
+> R is a powerful tool for statistical computing and
+graphics. It has, unfortunately, been caricatured as
+weird, unforgiving, and applicable only to hardcore
+statisticians. The objective of this session is thus
+twofold: (1) to demonstrate R's versatility up and
+down the data pipeline; and (2) to demonstrate R's
+overall accessibility to users who do not have a
+computer science background. Towards those ends, I
+will narrate a typical R workflow at Scout from start
+to finish including scripts, plots, HTML and PDF
+reports, and an interactive web application.
+
+While far from perfect, I felt good about the presentation on the whole.

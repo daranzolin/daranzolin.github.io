@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "R Taboos"
+date:   2017-08-07 21:27:02 -0700
+categories: Post
+tags: R 
+---
+
+In Freud's tripartite model of the psyche, the superego represents the internalization of parental and societal values. Should I
+consider an immoral act, my superego will reflexively flood me with guilt. Thus is our behavior and neuroses explained. 
+
+So it is with writing code. I have an R superego. You probably have an R superego. A catalog of taboo functions and control flows haunts our scripts. And 
+perhaps much like our western ethical norms, their validity is not always obvious. For example, I do not know why `match.call` is bad form or distasteful. I only know
+I was once scolded for using it on Reddit by one of our most authoritative authorities, and that I won't make that mistake again.  
+
+<!--more-->
+
+To further the codification and subsequent internalization of R norms, I've started to aggregate these "taboos" on my computer. Note that 
+these are unrelated to *actual* ethical issues like web scraping or biases in gender prediction models. Rather, 
+these innocuous malfeasances elicit--and merit--only gentle disdain. The list: 
+
+* Don't make `for` loops
+* Don't sequence numeric vectors with a colon (e.g. `1:10`)
+* Don't use `missing`
+* Don't use `match.call` (except maybe with C)
+* Don't use `attach`
+* Don't pipe into ggplot (although everyone does it)
+* Don't use the magrittr pipe and assign operator (`%<>%`)[^1]
+* Don't use the ticks `` in your code--figure out a better way
+
+That's my conscious list, although I'm sure I've internalized other prohibitions. I'll update this post when my conscience
+alerts me.
+
+
+[^1]: I hate not using this one. The temptation is overwhelming. I can't wait until I become a Nietzschean *Ubermensch* and can pipe and assign without guilt.
+

@@ -1,0 +1,134 @@
+---
+layout: post
+title:  "Exploring the Perseus Digital Library with R"
+date:   2017-02-07 20:27:02 -0700
+categories: Post
+tags: R textmining XML
+---
+
+For those ~~miserable~~ fortunate enough to study classical literature, the [Perseus Digital Library](http://www.perseus.tufts.edu/hopper/) (PDL) is an 
+invaluable resource. In brief, PDL is a collection of Greek and Latin texts (among others), although it also functions as a lexicon similar
+to [non-digital resources like BDAG.](https://www.amazon.com/Greek-English-Lexicon-Testament-Christian-Literature/dp/0226039331) I often used the site
+to check a word's alternative definitions or locate other occurrences. Wow, that feels like forever ago now.
+
+<!--more-->
+
+I must have subconsciously drifted back to the site for one reason or another, but whereas previously I had eyes only for exegesis, I now see
+fun software projects. Somewhat miraculously, I am not the first to contemplate technical applications to ancient texts--[someone beat me to it.](http://inlustre.net/latinowl/) 
+
+For my own purposes, I confess I don't have any specific applications in mind. I can vaguely imagine an interesting shiny app or tidy text
+analysis, but those are just ideas; a full R package is even more distant. Anyways, I first had/have to conquer Perseus' XML schema, which was/is not fun, and barely rewarding. Thank God for
+Jenny Bryan's `xml2::as_list()`.
+
+Per Scott Mcphee--my aforementioned kindred spirit--I can acquire Perseus' entire catalog of Greek and Latin texts via a url that could crash
+your browser, so I won't link to it. You need the urn identifier to each text in order to query the collection, and those are buried deep
+in the XML. Here's how I got my data frame catalog:
+
+{% highlight r %}
+
+library(tidyverse)
+library(xml2)
+
+url <- "http://www.perseus.tufts.edu/hopper/CTS?request=GetCapabilities"
+perseus_xml <- GET(url) %>% 
+  content("raw") %>% 
+  read_xml() %>% 
+  as_list()
+  
+parse_nested_xml <- function(x) {
+attr <- c(attributes(x), attributes(x$work))
+items <- unlist(x)
+c(attr, items) %>% 
+  discard( ~length(.) > 1) %>%
+  data.frame()
+}
+
+parse_perseus_xml <- function(x) {
+  works <- sum(attributes(x)$names == "work")
+  if (works > 1) {
+    dat <- map_df(x, parse_nested_xml) %>% 
+      select(1:7)
+  } else {
+    dat <- parse_nested_xml(x) %>% 
+      select(1:7)
+  }
+  names(dat) <- c("lang", "groupname", "projid", "urn", "title", "label", "description")
+  return(dat)
+}
+
+perseus_catalog <- perseus_xml %>% 
+  keep(~ "work" %in% names(.)) %>% 
+  map_df(parse_perseus_xml) %>% 
+  tidyr::fill(groupname) %>% 
+  filter(complete.cases(.),
+         nchar(lang) == 3)
+
+{% endhighlight %}
+
+Yes, it's somewhat of a hackjob, and yes, I almost certainly lost some data along the way, but here's a taste of the tidy data frame:
+
+|lang |groupname   |projid          |urn                             |title                   |description                                                                                                                                                                                                                             |
+|:----|:-----------|:---------------|:-------------------------------|:-----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|grc  |Hippocrates |greekLit:tlg006 |urn:cts:greekLit:tlg0627.tlg006 |De morbis popularibus   |The Genuine Works of Hippocrates. Hippocrates. Charles Darwin Adams. New York. Dover. 1868.                                                                                                                                             |
+|grc  |Dinarchus   |greekLit:tlg005 |urn:cts:greekLit:tlg0029.tlg005 |Against Aristogiton     |Perseus:bib:oclc,1533490, Perseus:bib:isbn,0674994345, Dinarchus. Minor Attic Orators in two volumes, 2, with an English translation by J. O. Burtt, M.A. Cambridge, MA, Harvard University Press; London, William Heinemann Ltd. 1962. |
+|grc  |Moschus     |greekLit:tlg001 |urn:cts:greekLit:tlg0035.tlg001 |Eros Drapeta            |Moschus. The Greek Bucolic Poets. J. M. (John Maxwell) Edmonds. William Heinemann; G. P. Putnam&apos;s Sons. London; New York. 1919. Keyboarding.                                                                                       |
+|grc  |Plutarch    |greekLit:tlg073 |urn:cts:greekLit:tlg0007.tlg073 |De amicorum multitudine |Perseus:bib:oclc,10390491, Plutarch. Moralia. Gregorius N. Bernardakis. Leipzig. Teubner. 1888. 1.                                                                                                                                      |
+
+Whose texts do I have the most of? 
+
+```
+
+> count(perseus_catalog, groupname, sort = TRUE)
+# A tibble: 70 × 2
+             groupname     n
+                 <chr> <int>
+1             Plutarch   145
+2               Lucian    71
+3          Demosthenes    63
+4    M. Tullius Cicero    60
+5    Aristides, Aelius    56
+6        Old Testament    46
+7  Titus Livius (Livy)    46
+8                Plato    36
+9               Lysias    34
+10       Homeric Hymns    33
+# ... with 60 more rows
+
+```
+
+How about a snippet of Cicero?
+
+```
+get_perseus_text <- function(urn, text) {
+  url <- sprintf("http://www.perseus.tufts.edu/hopper/CTS?request=GetPassage&urn=%s:%s", urn, text)
+  httr::GET(url) %>% 
+    httr::content("raw") %>% 
+    xml2::read_xml() %>% 
+    xml2::as_list()
+}
+cicero <- perseus_catalog %>% 
+  filter(grepl("Cicero", groupname)) %>% 
+  sample_n(1) %>%
+  select(urn, title)
+
+> cicero
+                               urn            title
+48 urn:cts:latinLit:phi0474.phi023 Against Vatinius
+
+cicero_passage <- get_perseus_text(urn = cicero$urn, text = "1.1")
+
+> cicero_passage$GetPassage$reply$TEI$text$body$div$p[[4]]
+[1] " tanta enim potest exsistere ubertas ingeni, 
+\nquae tanta dicendi copia, quod tam divinum atque incredibile 
+\ngenus orationis, quo quisquam possit vestra in nos 
+\nuniversa promerita non dicam complecti orando, sed percensere 
+\nnumerando? qui mihi fratrem optatissimum, me 
+\nfratri amantissimo, liberis nostris parentes, nobis liberos, qui 
+\ndignitatem, qui ordinem, qui fortunas, qui amplissimam rem 
+\npublicam, qui patriam, qua nihil potest esse iucundius, qui 
+\ndenique nosmet ipsos nobis reddidistis.\n\n"
+
+```
+
+Obviously I'd have to do a much better job parsing the XML response in the future. Here's to a ~~depressing~~ fun new project! Cross your fingers
+for Part II!

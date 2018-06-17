@@ -1,0 +1,185 @@
+---
+layout: post
+title:  "Do Cats have Different Personalities? A Cat Town Cafe Investigation"
+date:   2017-04-01 21:27:02 -0700
+categories: Post
+tags: R scraping
+---
+
+I like cats more than other animals. Alongside their evolutionary advantages--retractable claws, night vision, a tail, 
+lighting reflexes, etc.--Mother Nature imbued these creatures with grace, majesty, and personalities unequaled within the
+animal kingdom. Don't @ me.
+
+That last phenomena, personality, merits closer attention. Cats have personalities. My cat Mycroft, for example, is shy but
+loquacious, snuggly but fiercely independent. He has moods. He is unpredicable in ways a dog or hamster could never be. But am I
+just describing *every cat?* I confess I've only ever had one cat (and pet), so I'm willing to concede, for the sake of argument,
+that I'm merely projecting personality traits on everyday cat behavior. Is Mycroft just like every other cat? For an answer,
+I turned to two of my favorite things: Cat Town Cafe and R.
+
+
+
+<!--more-->
+
+[Cat Town Cafe](http://www.cattownoakland.org/) is a non-profit adoption center in Oakland. They keep updated profiles of cats
+available for adoption on their website, including effusive descriptions of each cat's personality. Perfect! Let's scrape the desciptions
+and put the `tidytext` package to work. My scraping function is below.
+
+{% highlight r %}
+
+library(rvest)
+library(tidyverse)
+library(stringr)
+library(tidytext)
+
+get_cat_town_cats <- function(cat_type) {
+  if (!cat_type %in% c("senior cats", "under 2 years", "cat friendly", "family cat", "first time owner")) {
+    stop("cat_type must be one of 'senior cats', 'under 2 years', 'cat friendly', 'family cat', 'first time owner'")
+  }
+  cat_type <- str_replace_all(cat_type, " ", "-")
+  BASE_URL <- "http://www.cattownoakland.org"
+  cats_url <- httr::modify_url(BASE_URL, path = cat_type)
+  cat_names <- cats_url %>% 
+    read_html() %>% 
+    html_nodes(".summary-excerpt a") %>% 
+    html_text() %>% 
+    as.character() %>% 
+    str_split(",") %>% 
+    map_chr(~ .[1]) %>% 
+    str_replace_all(" ", "-") %>% 
+    str_to_lower()
+  
+  individual_cats_urls <- paste(BASE_URL, cat_names, sep = "/")
+  
+  get_cat_deets <- function(cat_url) {
+    cat_url %>% 
+      read_html() %>% 
+      html_nodes(".sqs-block-html") %>% 
+      html_text() %>% 
+      as.character()
+  }
+  
+  safe_cats <- safely(get_cat_deets)
+  
+  cats_df <- tibble(
+    cat_type = cat_type,
+    cat_name = cat_names,
+    cat_description = individual_cats_urls %>% 
+      map(safe_cats) %>% 
+      map_chr(function(x) paste(x$result, collapse = " "))
+  )
+  return(cats_df)
+}
+
+{% endhighlight %}
+
+A brief explanation: Cat Town categorizes their cats under five labels (e.g. Senior Cats, Family Cats, etc.). My function's 
+input creates the url to that category, sends a GET request, scrapes the names, concatenates those names into new, unique urls,
+iterates through the urls, and pulls out the text descriptions into a data frame. `purrr` really is a thing of beauty.
+
+With the function in hand, I grab the text descriptions from all five categories:
+
+{% highlight r %}
+
+cat_types <- c("senior cats", "under 2 years", "cat friendly", "family cat", "first time owner")
+cat_town_cats <- cat_types %>% 
+  map_df(get_cat_town_cats)
+
+{% endhighlight %}
+
+`cat_town_cats` is now a data frame with 22 observations (cats). `tidytext` time:
+
+{% highlight r %}
+
+cat_words <- cat_town_cats %>% 
+  unnest_tokens(word, cat_description)
+
+data("stop_words")
+cat_words <- cat_words %>%
+  anti_join(stop_words)
+
+positive_words <- get_sentiments("nrc") %>%
+  filter(sentiment == "positive")
+ 
+cat_words <- cat_words %>% 
+  semi_join(positive_words) 
+
+{% endhighlight %}
+
+I don't believe there's a way to isolate personality traits or adjectives from any of the `tidytext` dictionaries, so I first settled for all "positive" words from the nrc lexicon and filtered out some of the fluff. The idea is to isolate the unique positive traits for each cat and get a sense of their personality row-by-row:
+
+{% highlight r %}
+
+cat_words %>% 
+  filter(!word %in% c("cafe", "benefit", "action", "favorite", "feeling", "expect", "building")) %>% 
+  distinct(cat_name, word) %>% 
+  group_by(cat_name) %>% 
+  summarize(personality = paste(word, collapse = ", ")) %>% 
+  knitr::kable()
+
+{% endhighlight %}
+
+
+
+|cat_name            |personality                                                                                                               |
+|:-------------------|:-------------------------------------------------------------------------------------------------------------------------|
+|billy               |companion, confidence, curiosity, intelligence, laughter, level, love, observant, patience, praise                        |
+|cosima              |balanced, confident, engaging, friendly, jump, love, playful, share, sweet                                                |
+|darcy               |baby, entertaining, happily, purr, receiving, special, sweet                                                              |
+|einstein            |companion, friendly, king, perfect, prefer, purr, sun, sweet, top, white                                                  |
+|georgia-and-baldwin |calm, confidence, continue, curiosity, dinner, enjoy, fairly, female, friend, grow, patient, real, thriving               |
+|maisy               |beautiful, cautious, charming, companion, female, lovable, lovely, purr, special, sweet                                   |
+|monkey              |balance, confident, entertaining, excited, food, greeting, independence, intelligent, laser, love, share                  |
+|nikki-and-drake     |adventure, calm, continue, curl, entertained, excited, female, grow, intelligent, kitten, restful, savvy                  |
+|oswald              |adoration, attention, buddy, child, confident, curl, friend, loving, savvy, spirit, teens                                 |
+|paisley             |buddy, entertaining, intelligent, jump, level, love, patience, understanding                                              |
+|rowan-and-reed      |affection, curl, enjoy, frisky, lead, ribbon, savvy, shine, sweet, true, willingly                                        |
+|smith               |affection, beautiful, companion, curiosity, cute, entertaining, found, friendly, kitten, learn, perfect, zeal, zest       |
+|trevor              |affection, companion, contact, friend, pretty, unique                                                                     |
+|woolsey             |calm, cute, endless, experienced, friendly, include, lovely, proper, share                                                |
+|yukon-and-blizzard  |adventurous, beautiful, chirp, curiosity, eat, experienced, guardian, kitten, playful, quiet, safe, savvy, spirits, tasty |
+|zoe                 |female, happy, pretty, sweet                                                                                              |
+
+Aaayyyyeeee, it kind of works! Yes, there's some redundancy (affection, companion, etc.), but it looks like the Cat Town folk successfully ascertained a unique profile for each cat. I'm ready to adopt Yukon and Blizzard, Billy, and Oswald right now.
+
+I then grouped the cats by category to compare the top three words within each category,
+ostensibly to see if cats within different types are described differently.
+
+{% highlight r %}
+
+cat_words %>% 
+  count(cat_type, word, sort = TRUE) %>% 
+  filter(!word %in% c("cafe", "benefit", "action", "favorite", "feeling", "expect")) %>% 
+  group_by(cat_type) %>%
+  slice(1:3)
+
+{% endhighlight %}
+
+```
+
+Source: local data frame [15 x 3]
+Groups: cat_type [5]
+
+           cat_type         word     n
+              <chr>        <chr> <int>
+1      cat-friendly        happy     2
+2      cat-friendly        buddy     1
+3      cat-friendly entertaining     1
+4        family-cat        sweet     3
+5        family-cat    confident     2
+6        family-cat         love     2
+7  first-time-owner         cute     2
+8  first-time-owner    affection     1
+9  first-time-owner    beautiful     1
+10      senior-cats    companion     2
+11      senior-cats      excited     2
+12      senior-cats     friendly     2
+13    under-2-years    curiosity     4
+14    under-2-years        savvy     4
+15    under-2-years    affection     3
+
+```
+
+Yea, not much to see here given the small sample size. 
+
+In sum, cats have personalities. I see it, Cat Town Cafe sees it, R sees it. Case closed.
+

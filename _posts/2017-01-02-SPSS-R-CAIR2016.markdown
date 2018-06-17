@@ -1,0 +1,63 @@
+---
+layout: post
+title:  "Reshaping Data: R vs. SPSS at CAIR 2016"
+date:   2017-01-02 3:27:02 -0700
+categories: Post
+tags: R SPSS 
+---
+
+One of the highlights of CAIR 2016 was [Data Mining to Identify Grading Practices,](http://www.cair.org/wp-content/uploads/sites/474/2016/12/NRinthapolKWahl_CAIR2016.pdf) 
+a splendid presentation by Kelly Wahl and Nida Rinthapol of UCLA. But besides the quality of the slides, the eloquence of the speakers,
+and the application of machine learning, I confess I was most intrigued by SPSS, the statistical software. What I felt was excitement--not 
+so much excitement at learning a new tool, but the thrill of a *challenge:* what they're doing in SPSS, I was determined to replicate in R.
+And if Twitter and #rstats are at all representative of the R community, I wager most useRs would have felt something similar. Petty? Probably.
+Insecure? Perhaps. But come hell or high water, anything SPSS can do, R can do better.
+
+<!--more-->
+
+No, I don't actually believe that. In all seriousness, this was just a practice exercise and a half-decent excuse for a blog. Happily, 
+I learned some new things along the way, such as dplyr's helpful helper functions `vars()`, and `funs()`. Both expanded my understanding
+of the #tidyverse and helped abstract my thinking across columns.
+
+In short, we started with a data frame where each row was a student id, term, course, section, and grade. The goal was to reshape the idea into 
+*percentiles* of each grade earned for each section. If you'd like to follow along and explore on your own, 
+Kelly and Nida very helpfully published the sample data available through the url below. 
+
+Script:
+
+{% highlight r %}
+library(tidyverse)
+library(haven)
+
+url <- "http://www.kellywahl.com/CAIR2016/Course_Offering_Enrollments_with_Grades_CAIR.sav"
+destfile <- "cair2016_kmeans.sav"
+if (!file.exists(destfile)) {
+  download.file(url, destfile)
+}
+cair_data <- read_sav("cair2016_kmeans.sav")
+
+cair_data <- cair_data %>% 
+  spread(grade, grade) %>% 
+  mutate(
+    grade_A_minus = ifelse(is.na(`A-`), 0, 1),
+    grade_A_plus = ifelse(is.na(`A+`), 0, 1),
+    grade_A = ifelse(is.na(A), 0, 1),
+    grade_B_minus = ifelse(is.na(`B-`), 0, 1),
+    grade_B_plus = ifelse(is.na(`B+`), 0, 1),
+    grade_B = ifelse(is.na(B), 0, 1),
+    grade_C_minus = ifelse(is.na(`C-`), 0, 1),
+    grade_C_plus = ifelse(is.na(`C+`), 0, 1),
+    grade_C = ifelse(is.na(C), 0, 1), 
+    grade_NP = ifelse(is.na(`F`), 0, 1)
+  ) %>% 
+  rowwise() %>% 
+  mutate(
+    total_grades = sum(grade_A_minus, grade_A_plus, grade_A, grade_B, grade_B_plus, grade_B_minus,
+                       grade_C, grade_C_plus, grade_C_minus, grade_NP)
+  ) %>% 
+  select(id, term, subject, catlg_no, sect_no, contains("grade")) %>% 
+  group_by(term, subject, catlg_no, sect_no) %>% 
+  summarize_at(vars(contains("grade")), sum) %>% 
+  ungroup() %>% 
+  mutate_at(vars(contains("grade_")), funs(round(./total_grades, 2)))
+  {% endhighlight %}
