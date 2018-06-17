@@ -149,8 +149,7 @@ the *sensitivity* of the test (true positive) at 0.95, and the *specificity* of 
 The probability of having (prior) after testing positive is 0.7814
 
 ```
-
-![useful image]({{ site.url }}/assets/ptree1.png)
+<img src="/img/blog/ptree1.png" alt="ptree1" align="center"/> 
 
 The message produced follows Bayes Theorum: the probability of A, given B, is the probability of A and B divided by the probability of B. Thus, there is a 78% chance that someone has X, given that they tested positive.
 

@@ -86,33 +86,32 @@ Now, some questions:
 
 Yeesh. It doesn't look any better on a histogram or broken down by stage:
 
-![useful image]({{ site.url }}/assets/Trihist.png)
+<img src="/img/blog/Trihist.png" alt="trihist" align="center"/> 
 
-![useful image]({{ site.url }}/assets/stageshist.png)
+<img src="/img/blog/stageshist.png" alt="stageshist" align="center"/> 
 
 
 **Is there a correlation between age and finish time?**
 
 The resounding 'No!' was cool to see.
 
-![useful image]({{ site.url }}/assets/Triscatplot.png)
+<img src="/img/blog/Triscatplot.png" alt="triscatplot" align="center"/> 
 
 **What was the distribution by gender?**
 
+<img src="/img/blog/Tribox.png" alt="Tribox" align="center"/> 
 
-![useful image]({{ site.url }}/assets/Tribox.png)
-
-![useful image]({{ site.url }}/assets/stageboxes.png)
+<img src="/img/blog/stageboxes.png" alt="stageboxes" align="center"/> 
 
 **How did the Neufelds, my racing companions, fare?**
 
 Better than me.
 
-![useful image]({{ site.url }}/assets/Familyraceshades.png)
+<img src="/img/blog/Familyraceshades.png" alt="Familtraceshades" align="center"/> 
 
 With emojis!
 
-![useful image]({{ site.url }}/assets/raceemojis.png)
+<img src="/img/blog/raceemojis.png" alt="raceemojis" align="center"/> 
 
 Some summary statistics:
 
@@ -124,7 +123,7 @@ Some summary statistics:
 
 Bonus: Age distribution
 
-![useful image]({{ site.url }}/assets/Triage.png)
+<img src="/img/blog/Triage.png" alt="Triage" align="center"/> 
 
 
 

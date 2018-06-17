@@ -26,7 +26,7 @@ ggtextparallel(16, version = "eng-ESV")
 
 ```
 
-![useful image]({{ site.url }}/assets/Jb.png)
+<img src="/img/blog/Jb.png" alt="Jb" align="center"/> 
 
 If you want to dip into the original greek, you can flip the version argument:
 
@@ -35,7 +35,7 @@ ggtextparallel(16, version = "grc")
 
 ```
 
-![useful image]({{ site.url }}/assets/Jog.png)
+<img src="/img/blog/Jog.png" alt="Jog" align="center"/> 
 
 Or you want to see it in Spanish?
 
@@ -45,7 +45,7 @@ ggtextparallel(16, version = "spa-RVR1960")
 
 ```
 
-![useful image]({{ site.url }}/assets/Jus.png)
+<img src="/img/blog/Jus.png" alt="Jus" align="center"/> 
 
 Over 275 languages across 300 versions are available. Consult the lazily loaded `biblesearch_versions` object for available versions.
 
@@ -56,7 +56,7 @@ gglangparallel(c("eng-ESV", "spa-RVR1960", "por-NTLH"), book = "john", verses = 
 
 ```
 
-![useful image]({{ site.url }}/assets/Versions.png)
+<img src="/img/blog/Versions.png" alt="versions" align="center"/> 
 
 I have tentative plans to create a `bookdown` function that would create an entire book in parallel of any input versions/languages. Or perhaps
 a shiny web app. Regardless, I hope it saves some poor student $80 down the road.

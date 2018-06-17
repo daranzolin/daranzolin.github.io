@@ -25,7 +25,7 @@ in hideous tables within .pdf and .docx files. There is subtle irony here: while
 claims to transparency, the vehicles of its standards are barely human or machine readable. Here is what the 
 Digital Communications job template looks like:
 
-![useful image]({{ site.url }}/assets/templateexample.png)
+<img src="/img/blog/templateexample.png" alt="templateexample" align="center"/> 
 
 You may have guessed where this is going. The language of Career Tracks almost cries out for text mining, and 
 the general hideousness of the templates demand cleaning and tidying. Tasks for which both R and my blog 
@@ -194,10 +194,11 @@ career_tracks <- career_tracks %>%
 
 Here's a `View()` of the data now:
 
-![useful image]({{ site.url }}/assets/careerview2.png)
+<img src="/img/blog/careerview2.png" alt="careerview2" align="center"/> 
 
 Better. But I admit the final `vis_miss` was disappointing:
 
-![useful image]({{ site.url }}/assets/vismiss3.png)
+<img src="/img/blog/vismiss3.png" alt="vismiss3" align="center"/> 
+
 Whether this is a healthy sample remains to be seen in Part II. In the meantime, I may ponder how to get more of the missing data...
 

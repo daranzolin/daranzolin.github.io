@@ -84,7 +84,7 @@ subject_network(subject = "Punic War")
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/Punic_war.png)
+<img src="/img/blog/Punic_war.png" alt="punicwar" align="center"/> 
 
 Hannibal and Scipio, the two great generals of the Punic Wars, are in the center of the action. The network is built out
 by other important generals, consuls, and statesmen. **Cumulative Effect:** Hmmm, generals and senators...but what is the connection to Plautus the comedian and Romulus? As I've since learned, Plautus' plays can be read as commentary on the Second Punic War. And Romulus is connected to the historian Dionysius, whose major work attempts *to justify* Roman dominance up to the First Punic War. He popularized the myth of Romulus for the people.
@@ -95,7 +95,7 @@ subject_network(subject = "Athens")
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/Athens.png)
+<img src="/img/blog/Athens.png" alt="Athens" align="center"/> 
 
 The Athens network is a role call of the great philosophers, heroes, lawmakers, generals, historians, and playwrights of the Classical Period. **Cumulative Effect:** None. 
 
@@ -105,7 +105,7 @@ subject_network(subject = "Achilles", center_subject = TRUE)
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/Achiles.png)
+<img src="/img/blog/Achiles.png" alt="achiles" align="center"/> 
 
 By setting `center_subject = TRUE`, you can center the network on the given subject. Here Achilles is enmeshed with the gods and heroes from the Trojan War. **Cumulative Effect:** None. Achilles was an A-list celeb among gods and humans.
 

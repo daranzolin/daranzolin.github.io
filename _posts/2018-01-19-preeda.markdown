@@ -58,7 +58,7 @@ View(supsensions)
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/view.png)
+<img src="/img/blog/view.png" alt="view" align="center"/> 
 
 `View` helps me visualize future transformations as data gets sliced, sorted, grouped, and gathered. It's like a map my
 mind can move over as I consider variations and covariations within the data.
@@ -111,7 +111,7 @@ p1 + p2
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/visdats1.png)
+<img src="/img/blog/visdats1.png" alt="visdats1" align="center"/> 
 
 ### What can I do with this?
 
@@ -169,7 +169,7 @@ county_data %>%
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/suspensions.png)
+<img src="/img/blog/suspensions.png" alt="suspensions" align="center"/> 
 
 Observed: supensions marked "other defiance" have dropped dramatically. 
 
@@ -217,7 +217,7 @@ iron(
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/waffle.png)
+<img src="/img/blog/waffle.png" alt="waffle" align="center"/> 
 
 Observed: El Dorado has had more drugs-related suspensions, Mendocino has had more violence-with-injury suspensions, and Yuba has had more violence-without-injury suspensions. 
 
@@ -256,7 +256,7 @@ ggplot(data = ca_df, mapping = aes(x = long, y = lat, group = group)) +
 
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/map.png)
+<img src="/img/blog/map.png" alt="map" align="center"/> 
 
 
 

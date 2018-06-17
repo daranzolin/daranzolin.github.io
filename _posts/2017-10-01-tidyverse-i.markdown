@@ -61,7 +61,7 @@ ggplot(package_df, aes(reorder(packages, package_uses), package_uses)) +
   
 {% endhighlight %}
 
-![useful image]({{ site.url }}/assets/Tidyverse_uses.png)
+<img src="/img/blog/Tidyverse_uses.png" alt="tidyverse" align="center"/> 
 
 Was surprised to see that `purrr` overtook `dplyr`. Now to ascertain from Terminal which *functions* I use most.
 
