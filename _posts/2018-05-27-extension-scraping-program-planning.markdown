@@ -33,7 +33,7 @@ We’re good.
 
 The offering data on the page resides in several tables but presents an interesting conundrum--some of the data is represented by images. Fortunately, these icons have “alt” html tags that indicate what they represent. The icon highlighted below, for example, has an alt tag of “Classroom and Online”:
 
-![useful image]({{ site.url }}/assets/unexcss.png)
+<img src="/img/blog/unexcss.png" alt="unexcss" align="center"/> 
 
 After some tinkering, the `.cols-7 .views-field` CSS selector will scrape 252 nodes from this page, one for every table cell. Because the structure of each table is identical, we can reformat the nodes into a single table without much effort.
 
