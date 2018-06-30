@@ -1,5 +1,5 @@
 ---
-  layout: post
+layout: post
 title:  "Introducing kapow: an explosive but maybe irresponsible way to assign variables from objects"
 date:   2018-06-30 11:15:02 -0700
 categories: Post
