@@ -18,6 +18,8 @@ subtitle:
 
 - **[rcicero](https://github.com/daranzolin/rcicero)** - R Client for the Cicero API.
 
+- **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
+
 
 ## R Shiny apps
 
@@ -25,5 +27,5 @@ subtitle:
 
 ## Talks
 
-- [R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data:](https://rpubs.com/daranzolin/cair-2016-slides) Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
+- **[R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data:](https://rpubs.com/daranzolin/cair-2016-slides)** Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
 
