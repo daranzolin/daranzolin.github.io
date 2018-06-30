@@ -25,6 +25,7 @@ description: "David Ranzolin"
 navbar-links:
   Blog:
   Code: "projects"
+  Archive: "tags"
   About Me: "aboutme"
 
 
