@@ -25,6 +25,10 @@ subtitle:
 
 - **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive shiny application to explore ethnic diversity in California school districts.
 
+## Maps
+
+*Coming soon!*
+
 ## Talks
 
 - **[R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data:](https://rpubs.com/daranzolin/cair-2016-slides)** Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
