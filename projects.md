@@ -27,7 +27,7 @@ subtitle:
 
 ## Maps
 
-*Coming soon!*
+- **[Moving Valmeyer (Coursera Project)](https://www.arcgis.com/home/webmap/viewer.html?webmap=8392b07ecd5f483591bcb9c66a337d66&extent=-90.3354,38.2837,-90.2512,38.3223)** - Published map to ArcGIS Online, after some geoprocessing with raster layers.
 
 ## Talks
 
