@@ -14,6 +14,8 @@ subtitle:
 
 - **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them.
 
+- **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
+
 - **[rCAEDDATA](https://github.com/daranzolin/rCAEDDATA)** - Data from the California Department of Education in R.
 
 - **[rcicero](https://github.com/daranzolin/rcicero)** - R Client for the Cicero API.
