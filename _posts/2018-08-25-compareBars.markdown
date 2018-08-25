@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Introducing compareBars: Simplify comparative bar charts
+title:  "Introducing compareBars: Simplify comparative bar charts"
 date:   2018-08-25 11:15:02 -0700
 categories: Post
 tags: R dataviz
