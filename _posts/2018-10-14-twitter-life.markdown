@@ -128,6 +128,6 @@ followed_accts %>%
 
 {% endhighlight %}
 
-<img src="/img/blog/twitter-area.png" alt="twitter-area" align="center"/> 
+<img src="/img/blog/twitter-area2.png" alt="twitter-area2" align="center"/> 
 
 I think it checks out! The small uptick in news/politics accounts probably coincides with the 2016 election,my timeline is still dominated by #rstats, and there is a visible emergence of GIS accounts.
