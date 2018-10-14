@@ -6,7 +6,7 @@ categories: Post
 tags: R
 ---
 
-You can learn a lot about someone on Twitter. Not only through tweets, but also through who one follows.
+You can learn a lot about someone on Twitter. Not only through tweets, but also through whom one follows.
 
 For example, I joined Twitter in August 2009. I'm not sure why--few of my friends were on the platform, it hadn't 
 been fully embraced by sports media, and there were no good memes. Maybe out of morbid curiosity. At the time, 
@@ -30,7 +30,6 @@ Getting data from Twitter means `rtweet`:[^2]
 
 {% highlight r %}
 
-library(tidytext)
 library(tidyverse)
 
 following <- rtweet::get_friends("daranzolin")
@@ -130,4 +129,4 @@ followed_accts %>%
 
 <img src="/img/blog/twitter-area2.png" alt="twitter-area2" align="center"/> 
 
-I think it checks out! The small uptick in news/politics accounts probably coincides with the 2016 election,my timeline is still dominated by #rstats, and there is a visible emergence of GIS accounts.
+I think it checks out! The small uptick in news/politics accounts probably coincides with the 2016 election, my timeline is still dominated by #rstats, and there is a visible emergence of GIS accounts. I wonder what phase 4 will be...
