@@ -43,7 +43,7 @@ following %>%
 {% endhighlight %}
 
 The `follow_order` column is the chronological order I followed the accounts. Where 'follow_order = 1',
-that is the first account I ever followed, and where 'follow_order` = 717' is the more recent account I've
+that is the first account I ever followed, and where 'follow_order = 717' is the more recent account I've
 followed.[^3] I created the `follow_order_group` variable to bin the accounts into roughly 15 groups (`geom_dotplot`
 and `geom_area` were not cooperating with 'binwidth = 1').
 
