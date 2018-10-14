@@ -42,10 +42,10 @@ following %>%
 
 {% endhighlight %}
 
-The `follow_order` column is the chronological order I followed the accounts. Where `follow_order` = 1,
-that is the first account I ever followed, and where `follow_order` = 717 is the more recent account I've
+The `follow_order` column is the chronological order I followed the accounts. Where 'follow_order = 1',
+that is the first account I ever followed, and where 'follow_order` = 717' is the more recent account I've
 followed.[^3] I created the `follow_order_group` variable to bin the accounts into roughly 15 groups (`geom_dotplot`
-and `geom_area` were not cooperating with `binwidth = 1`).
+and `geom_area` were not cooperating with 'binwidth = 1').
 
 [^3]: The first account is my sister--shouts to Larissa.
 
@@ -130,10 +130,4 @@ followed_accts %>%
 
 <img src="/img/blog/twitter-area.png" alt="twitter-area" align="center"/> 
 
-The `add_row` calls are necessary because `geom_area` will leave 'holes' within the chart if a category
-is missing from a group.   
-
-Charitable readers will understand that although Twitter is often very bad, it is also very good. I've learned
-an incredible amount of things on Twitter. It is a better networking and professional development tool than LinkedIn,
-cooler than Instagram, and 10x cooler than Facebook. I remember attending UseR! 2016 at Stanford and thinking, 
-"Wow, I've already seen all these slides and heard all these announcements on Twitter
+I think it checks out! The small uptick in news/politics accounts probably coincides with the 2016 election,my timeline is still dominated by #rstats, and there is a visible emergence of GIS accounts.
