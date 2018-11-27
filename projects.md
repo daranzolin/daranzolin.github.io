@@ -32,9 +32,6 @@ subtitle:
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
 
-
-## R Shiny apps
-
 - **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive shiny application to explore ethnic diversity in California school districts.
 
 ## Maps
