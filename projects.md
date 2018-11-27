@@ -6,19 +6,29 @@ subtitle:
 
 ---
 
-## R Packages
+## RStudio Addins
 
 - **[ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps)** - Generate View() tabs for each step in a pipe chain.
 
+- **[compareAreas](https://github.com/daranzolin/compareAreas)** - Compare areas across square meters, kilometers, feet, miles, and acres
+
+- **[typeStringsGadget](https://github.com/daranzolin/typeStringsGadget)** - Input raw text and return a character vector
+
+## API Clients
+
 - **[rcanvas](https://github.com/daranzolin/rcanvas)** - R Client for your Canvas LMS. Get student data, copy courses, grade students, etc.
 
-- **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them.
+- **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them. rOpenSci reviewed.
+
+- **[rcicero](https://github.com/daranzolin/rcicero)** - R Client for the Cicero API.
+
+## Data Visualization
 
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
 
-- **[rCAEDDATA](https://github.com/daranzolin/rCAEDDATA)** - Data from the California Department of Education in R.
+## Other
 
-- **[rcicero](https://github.com/daranzolin/rcicero)** - R Client for the Cicero API.
+- **[rCAEDDATA](https://github.com/daranzolin/rCAEDDATA)** - Data from the California Department of Education in R.
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
 
