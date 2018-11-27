@@ -20,7 +20,7 @@ thus more difficult to conceptualize. This is the same reason bar charts are sup
 As an aspiring GIS professional, improving my spatial faculties is on the to-do list. Towards that end, I developed a small 
 tool to map and compare areas within a familiar location. [`compareAreas`](https://github.com/daranzolin/compareAreas) is a Shiny Gadget that can be used as a handy reference. Unsure what's larger--55000 acre or 100 square miles? Plug it in:
 
-<img src="/img/blog/ca-blog.png" alt="cb1" align="center"/> 
+<img src="/img/blog/ca-blog2.png" alt="cb1" align="center"/> 
 
 The tool is unapologetically bay-area-centric. Working out the projections for custom locations was beyond my time and interest, but any urban area with roads, parks, and freeways is a stable reference for area comparison.
 
