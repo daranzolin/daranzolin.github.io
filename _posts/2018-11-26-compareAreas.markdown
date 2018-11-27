@@ -18,7 +18,7 @@ even if we did know that 1 square mile is 640 acres, math is hard. And third, ar
 thus more difficult to conceptualize. This is the same reason bar charts are superior to pie charts. 
 
 As an aspiring GIS professional, improving my spatial faculties is on the to-do list. Towards that end, I developed a small 
-tool to map and compare areas within a familiar location. [`compareAreas`](https://github.com/daranzolin/compareAreas) is a Shiny Gadget that can be used as a handy reference. Unsure what's larger--55000 acre or 100 square miles? Plug it in:
+tool to map and compare areas within a familiar location. [`compareAreas` is a Shiny Gadget](https://github.com/daranzolin/compareAreas) that can be used as a handy reference. Unsure what's larger--55000 acre or 100 square miles? Plug it in:
 
 <img src="/img/blog/ca-blog2.png" alt="cb1" align="center"/> 
 
