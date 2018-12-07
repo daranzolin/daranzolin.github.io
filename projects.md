@@ -26,17 +26,15 @@ subtitle:
 
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
 
+- **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive Shiny application to explore ethnic diversity in California school districts.
+
+- **[Moving Valmeyer (Coursera Project)](https://www.arcgis.com/home/webmap/viewer.html?webmap=8392b07ecd5f483591bcb9c66a337d66&extent=-90.3354,38.2837,-90.2512,38.3223)** - Published map to ArcGIS Online, after some geoprocessing with raster layers.
+
 ## Other
 
 - **[rCAEDDATA](https://github.com/daranzolin/rCAEDDATA)** - Data from the California Department of Education in R.
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
-
-- **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive shiny application to explore ethnic diversity in California school districts.
-
-## Maps
-
-- **[Moving Valmeyer (Coursera Project)](https://www.arcgis.com/home/webmap/viewer.html?webmap=8392b07ecd5f483591bcb9c66a337d66&extent=-90.3354,38.2837,-90.2512,38.3223)** - Published map to ArcGIS Online, after some geoprocessing with raster layers.
 
 ## Talks
 
