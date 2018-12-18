@@ -20,7 +20,9 @@ subtitle:
 
 - **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them. rOpenSci reviewed.
 
-- **[rcicero](https://github.com/daranzolin/rcicero)** - R Client for the Cicero API.
+- **[rcicero](https://github.com/daranzolin/rcicero)** - R Client for the Cicero REST API.
+
+- **[rEvalKit](https://github.com/daranzolin/rEvalKit)** - R Client for the EvaluationKit REST API
 
 ## Data Visualization
 
