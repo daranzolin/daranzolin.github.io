@@ -10,7 +10,7 @@ One of my friends is a terrible liar. The tells are numerous--irregular breathin
 irrepressible grins, and pinkened cheeks. This puts him at a competitive disadvantage while
 playing certain table games that require an element of deception. 
 
-For example, six of us recently played [the popular table game Cheat/BS/I doubt it.](https://www.pagat.com/beating/cheat.html)
+For example, six of us recently played [the popular Cheat/BS/I doubt it.](https://www.pagat.com/beating/cheat.html)
 I won't go over the mechanics here, but it wasn't long before the bad liar wondered aloud: 'What are the chances that I wouldn't have to lie and still win the game?' My blogging antennae perked up immediately, and I announced that we could run a simulation and even ~~brag~~ blog about it later. Another friend scoffed and expressed disbelief (whether through ignorance or malice I do not know), and the challenge was set. 
 
 <!--more-->
