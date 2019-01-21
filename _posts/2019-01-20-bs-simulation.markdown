@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "In thy foul throat thou liest--Playing BS without Lying"
-date:   2019-01-20 11:15:02 -0700
+date:   2019-01-19 11:15:02 -0700
 categories: Post
 tags: R
 ---
