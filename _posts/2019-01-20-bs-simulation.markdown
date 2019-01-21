@@ -86,6 +86,8 @@ play_bs_without_lying()
 
 Now we simulate 10000 games 1000 times and plot the distribution:
 
+{% highlight r %}
+
 simulate_games <- function(times) {
   games <- vector(mode = "logical", length = times)
   for (i in seq_along(games)) {
