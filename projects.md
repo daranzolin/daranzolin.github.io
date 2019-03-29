@@ -28,6 +28,8 @@ subtitle:
 
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
 
+- **[quickglobe](https://github.com/daranzolin/quickglobe)** - Interactive 3D globe built with d3.js.
+
 - **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive Shiny application to explore ethnic diversity in California school districts.
 
 - **[Moving Valmeyer (Coursera Project)](https://www.arcgis.com/home/webmap/viewer.html?webmap=8392b07ecd5f483591bcb9c66a337d66&extent=-90.3354,38.2837,-90.2512,38.3223)** - Published map to ArcGIS Online, after some geoprocessing with raster layers.
