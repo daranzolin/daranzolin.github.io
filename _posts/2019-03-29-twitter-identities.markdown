@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "'Speaking as a...': Our Twitter Identities and Behavior
+title:  "'Speaking as a...': Our Twitter Identities and Behavior"
 date:   2019-03-29 11:15:02 -0700
 categories: Post
 tags: R
@@ -15,8 +15,8 @@ See what I did there? Before making a statement, I offered what is either (A) di
 (C) privileged boast. There are subtle differences between them. If a disclaimer or self-justification, the implication is 
 that--given my identity "lens"--I can't really help why I feel this way, and my interlocutor should listen charitably. 
 If a privileged boast, I'm asserting that my identity/perspective is worthwhile or perhaps even superior to whomever 
-or whatever I'm engaging. This mode of communication is ubiquitious, but becomes especially hilarious on Twitter. People 
-tweet some really wild things after 'speaking as...'.  
+or whatever I'm engaging. This mode of communication is ubiquitious, but becomes especially hilarious on Twitter. People really
+tweet some wild things after 'speaking as...'.  
 
 <!--more-->
 
@@ -24,7 +24,9 @@ But who are these people and what are they saying? Thanks to the trusty `rtweet`
 
 {% highlight r %}
 
-tweets <- rtweet::search_tweets(q = '"speaking as a"', n = 18000, include_rts = FALSE)
+tweets <- rtweet::search_tweets(q = '"speaking as a"', 
+                                n = 18000, 
+                                include_rts = FALSE)
 
 {% endhighlight %}
 
@@ -83,7 +85,7 @@ clean_tweets %>%
 
 <img src="/img/blog/identities-counts.png" alt="identities-count" align="center"/> 
 
-Some comments:
+Some observations:
 
 * I checked the 'citizen' tweets and although I had excluded RTs from the search, the same text was getting tweeted 
 by what looks like multiple bot accounts.
@@ -95,7 +97,7 @@ mom)
 * There is no overlap in hashtags used.
 * The vast majority of these tweets are replies to other tweets.
 
-The final observation merits further analysis. There's something *especially 'Twitter'* and very 'online' about 
+The final observation merits further analysis. There's something especially 'Twitter' and very 'online' about 
 responding to someone else with 'Speaking as a...'. Check the distribution:
 
 {% highlight r %}
@@ -147,10 +149,10 @@ Bear with me now for some foolishness. What follows is a rehearsal of the excell
 section of [*Modern Dive: Statistical Inference via Data Science.*](https://moderndive.com/) Here is our silly
 hypothesis test.
 
-Null Hypothesis: There is no association between 'male tweets' (e.g. the tweeter self-identified as male) and 
+*Null Hypothesis:* There is no association between 'male tweets' (e.g. the tweeter self-identified as male) and 
 the liklihood that the tweet was a response to another tweet.
 
-Alternative Hypothesis: A self-identifying 'male tweet' is more likely to be a response to another tweet. 
+*Alternative Hypothesis:* A self-identifying 'male tweet' is more likely to be a response to another tweet. 
 
 First, let's glance at a frequency table:
 
