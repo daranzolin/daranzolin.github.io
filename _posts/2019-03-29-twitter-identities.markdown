@@ -1,13 +1,12 @@
 ---
 layout: post
-title:  "'Speaking as a...': Our Twitter Identities and Behavior"
+title:  "'Speaking as a...': An Inquiry into Twitter Identities and Mansplaining"
 date:   2019-03-29 11:15:02 -0700
 categories: Post
 tags: R
 ---
 
-Speaking as an employed, white, married, educated, male, millenial, trash archer, washed point guard, pseudo-anarco-communist, 
-wannabe lifter, gamer, and #rstats enthusiast, *Python is trash.*[^1]
+Speaking as an employed, white, hetero, cis-gendered, married, educated, male, millenial, trash archer, washed point guard, pseudo-anarco-communist, wannabe lifter, and #rstats enthusiast, *Python is trash.*[^1]
 
 [^1]: Joking.
 
@@ -15,7 +14,7 @@ See what I did there? Before making a statement, I offered what is either (A) di
 (C) privileged boast. There are subtle differences between them. If a disclaimer or self-justification, the implication is 
 that--given my identity "lens"--I can't really help why I feel this way, and my interlocutor should listen charitably. 
 If a privileged boast, I'm asserting that my identity/perspective is worthwhile or perhaps even superior to whomever 
-or whatever I'm engaging. This mode of communication is ubiquitious, but becomes especially hilarious on Twitter. People really
+or whatever I'm engaging. This mode of communication is ubiquitious, but is especially hilarious on Twitter. People really
 tweet some wild things after 'speaking as...'.  
 
 <!--more-->
@@ -209,5 +208,5 @@ null_distn_two_props %>%
 
 {% endhighlight %}
 
-Less than 0.5! Null hypothesis rejected! Sorry men--*speaking as a man,* we have a tendency to reply to other
-people's tweets. 
+Less than 0.05! Null hypothesis rejected! Sorry men--*speaking as a man,* we have a tendency to reply to other
+people's tweets.
