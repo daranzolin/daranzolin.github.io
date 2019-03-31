@@ -117,11 +117,9 @@ clean_tweets %>%
 
 <img src="/img/blog/reply-dist.png" alt="reply-dist" align="center"/> 
 
-People just love tweeting opinions couched by their identities.
+People just love tweeting opinions couched by their identities. And just for fun, here is a sampling of my favorite Twitter identities.
 
-Just for fun, here is a sampling of my favorite Twitter identities.
-
-Speaking as a...
+*Speaking as a...*
 
 * non-white liberal and the son of god
 * burglar myself
@@ -154,6 +152,8 @@ the liklihood that the tweet was a response to another tweet.
 
 *Alternative Hypothesis:* A self-identifying 'male tweet' is more likely to be a response to another tweet. 
 
+*Alternative Alternative Hypothesis:* MANSPLAINING IS REAL
+
 First, let's glance at a frequency table:
 
 {% highlight r %}
@@ -171,7 +171,8 @@ janitor::tabyl(male_tweets, is_male, is_reply)
 
 {% endhighlight %}
 
-Second, let's do some randomization testing to generate a distribution of differences in proportions:
+Is the difference statistically significant? There is a difference in proportions, but is our sample too small? 
+To find out, let's do some randomization testing and generate a distribution of differences in proportions:
 
 {% highlight r %}
 
@@ -208,4 +209,5 @@ null_distn_two_props %>%
 
 {% endhighlight %}
 
-Less than 0.5! Null hypothesis rejected! 
+Less than 0.5! Null hypothesis rejected! Sorry men--*speaking as a man,* we have a tendency to reply to other
+people's tweets. 
