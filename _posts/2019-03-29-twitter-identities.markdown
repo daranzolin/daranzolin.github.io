@@ -6,7 +6,7 @@ categories: Post
 tags: R
 ---
 
-Speaking as an employed, white, hetero, cis-gendered, married, educated, male, millenial, trash archer, washed point guard, pseudo-anarco-communist, wannabe lifter, and #rstats enthusiast, *Python is trash.*[^1]
+Speaking as an employed, white, hetero, cis-gendered, married, educated, male, millenial, trash archer, washed point guard, pseudo-anarcho-communist, wannabe lifter, and #rstats enthusiast, *Python is trash.*[^1]
 
 [^1]: Joking.
 
@@ -22,6 +22,9 @@ tweet some wild things after 'speaking as...'.
 But who are these people and what are they saying? Thanks to the trusty `rtweet` package, we can extract a random sample of 'identity tweets':
 
 {% highlight r %}
+library(rtweet)
+library(stringr)
+library(tidyverse)
 
 tweets <- rtweet::search_tweets(q = '"speaking as a"', 
                                 n = 18000, 
