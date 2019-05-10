@@ -26,6 +26,8 @@ subtitle:
 
 ## Data Visualization
 
+- **[d3rain](https://github.com/daranzolin/d3rain)** - 'Raindrop' visualizations in R with d3.js.
+
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
 
 - **[quickglobe](https://github.com/daranzolin/quickglobe)** - Interactive 3D globe built with d3.js.
