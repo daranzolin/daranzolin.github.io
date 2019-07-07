@@ -16,18 +16,18 @@ points need to move? Does that bar need to grow? These are questions asked by sm
 Movement and animation have epistemological, archetypal, and value-laden dimensions: ascent = good; descent = bad; lateral movement 
 implies distance, time, etc. For example, consider [the Pudding's recent visualization of high school stars' NBA destinies.](https://pudding.cool/2019/03/hype/)
 The result is brilliant, compelling, and incredibly well-done in just about every way. I do, however, think it *slightly* odd that in 
-this particular example, *the further down an observation travels, the better their career*.[^1] There is maybe some momentary mental friction
+this particular example, *the further down an observation travels, the better their career*. There is maybe some momentary mental friction
 as the viewer must re-orient their 'down = bad' bias. Of course, the viz is smartly decorated with labels and shadings to assist with 
-this re-orientation, but I maintain that it exists. Scroll down the page, and note that the "down = 'bad'" perspective returns in the funnel charts; colleges
-with more NBA players have longer bars up high. 
+this re-orientation, but I maintain that it exists. Scroll down the page, and note that the "down = 'bad'" perspective returns in the funnel charts; colleges with more NBA players have longer bars up high.[^1] 
 
-[^1]: I would also contest their suspect evaluation of certain players' careers. Jamario Moon as 'Great'? 
-Tayshaun Prince a 'Superstar'? Eric Gordan as 'Mediocre'??
+[^1]: I would also contest their suspect evaluation of certain players' careers. Jamario Moon as 'Great'? Tayshaun Prince a 'Superstar'? Eric Gordan as 'Mediocre'?
 
-The Pudding's project was my inspiration and motivation for `d3rain`, my latest package. At it's core, the package is a fun way to
-visualize distibutions, and the downward movement can reinforce various subtleties within the subject. The example below shows the distribution of 2015 police killings by 'armed status'. 
+The Pudding's project was my inspiration and motivation for `d3rain`, my latest package. At it's core, [the package is a fun way to
+visualize distibutions,](https://github.com/daranzolin/d3rain) and the downward movement can reinforce various subtleties within the subject. The example below shows the distribution of 2015 police killings by 'armed status'. 
 
 {% highlight r %}
+library(dplyr)
+library(d3rain)
 
 armed_levels <- rev(c('Unarmed', 'Knife', 'Non-lethal firearm', 'Firearm'))
 pk <- fivethirtyeight::police_killings %>% 
