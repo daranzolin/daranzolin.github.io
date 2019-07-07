@@ -51,4 +51,4 @@ pk %>%
 
 ![Alt Text](https://media.giphy.com/media/XbxWM2piVjyEszMDCQ/giphy.gif)
 
-While almost no police killings are justified and all are tragedies, contra the Pudding's example, here descent is worse by varrying degrees. The dropping movement may also evoke 'bodies dropping', and the crimson red is a clear analog to bloodshed. But ultimately because of the movement, I think that this chart 'hits harder' than a box plot or histogram. 
+While almost no police killings are justified and all are tragedies, contra the Pudding's example, here descent is worse by varrying degrees. The dropping movement may also evoke 'bodies dropping', and the crimson red is a clear analog to bloodshed. A black fill would also be appropriately somber. But ultimately because of the movement, I think that this chart 'hits harder' than a box plot or histogram. 
