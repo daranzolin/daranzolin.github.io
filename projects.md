@@ -42,7 +42,9 @@ subtitle:
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
 
-- **[dfdetective](https://github.com/daranzolin/dfdetective)** - Scour your data frames
+- **[dfdetective](https://github.com/daranzolin/dfdetective)** - Scour your data frames.
+
+- **[inferregex](https://github.com/daranzolin/inferregex)** - Infer the regular expression (regex) of a string.
 
 ## Talks
 
