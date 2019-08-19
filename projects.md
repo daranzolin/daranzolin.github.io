@@ -12,8 +12,6 @@ subtitle:
 
 - **[compareAreas](https://github.com/daranzolin/compareAreas)** - Compare areas across square meters, kilometers, feet, miles, and acres
 
-- **[typeStringsGadget](https://github.com/daranzolin/typeStringsGadget)** - Input raw text and return a character vector
-
 ## API Clients
 
 - **[rcanvas](https://github.com/daranzolin/rcanvas)** - R Client for your Canvas LMS. Get student data, copy courses, grade students, etc.
@@ -40,11 +38,7 @@ subtitle:
 
 ## Other
 
-- **[rCAEDDATA](https://github.com/daranzolin/rCAEDDATA)** - Data from the California Department of Education in R.
-
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
-
-- **[dfdetective](https://github.com/daranzolin/dfdetective)** - Scour your data frames.
 
 - **[inferregex](https://github.com/daranzolin/inferregex)** - Infer the regular expression (regex) of a string.
 
