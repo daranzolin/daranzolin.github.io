@@ -9,4 +9,4 @@ several nerdy hobbies (coding, Soren Kierkegaard, dead languages, and Raspberry 
 
 I studied English literature and religious studies, finishing my M.T.S from Emory University in 2013. Sometime in the recent past I was exposed to computer programming, and I quickly learned that writing code was more fun than writing papers. Now I'm busy honing my analysis skills (R, databases, statistics), furthering my web development skills (HTML, CSS, JS), and jumping into the world of Geographic Information System (GIS) technology.
 
-[View my resume here.]({{ site.url }}/pdsf/Ranzolin-Resume.pdf)
+[View my resume here.]({{ site.url }}/pdfs/Ranzolin-Resume.pdf)
