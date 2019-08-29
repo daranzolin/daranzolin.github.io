@@ -34,13 +34,13 @@ subtitle:
 
 - **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive Shiny application to explore ethnic diversity in California school districts.
 
-- **[Moving Valmeyer (Coursera Project)](https://www.arcgis.com/home/webmap/viewer.html?webmap=8392b07ecd5f483591bcb9c66a337d66&extent=-90.3354,38.2837,-90.2512,38.3223)** - Published map to ArcGIS Online, after some geoprocessing with raster layers.
-
 ## Other
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
 
 - **[inferregex](https://github.com/daranzolin/inferregex)** - Infer the regular expression (regex) of a string.
+
+- **[pmapply](https://github.com/daranzolin/pmapply)** - Apply a function across pairs of vectors.
 
 ## Talks
 
