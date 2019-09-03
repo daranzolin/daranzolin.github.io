@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Reports as Functions: A Brief Overview of rmarkdown::render"
+title:  "Turn your Reports into Functions!"
 date:   2019-09-03 13:15:02 -0700
 categories: Post
 tags: R
@@ -8,17 +8,16 @@ tags: R
 
 Your reporting infrastructure is like a puzzle: you have to know how the pieces fit. Your ETL scripts are a piece; your table
 schema is a piece; your data extraction tools are a piece; and your output is a piece. While brute force and time can wedge
-anything together (however crudely), ideally we want as little friction as possible. A near seamless structure can work magic
-with some package templating + `rmarkdown::render`. In brief, *you will probably want to turn your reports into functions.* Below I'll demonstrate how this works, thus creating a programmatic interface to your reporting infrastructure. That means loops and automation, coding instead of clicking.
+anything together (however crudely), ideally we want as little friction as possible; a dash of package templating + `rmarkdown::render` + `purrr` greases all wheels. In brief, *you will probably want to turn your reports into functions.* Below I'll demonstrate how this works, thus creating a programmatic interface to your reporting infrastructure. That means loops and automation, coding instead of clicking.
 
 <!--more-->
 
-You can follow along by first installing [the `reportsAsFunctions` on GitHub.](https://github.com/daranzolin/reportsAsFunctions) The package contains a paramaterized .Rmd template and a single function, `generate_report`.[^1]
+You can follow along by first installing [reportsAsFunctions on GitHub.](https://github.com/daranzolin/reportsAsFunctions) The package contains a paramaterized .Rmd template and a single function, `generate_report`.[^1]
 If you are unsure about creating Rmd templates, [Chester Ismay's tutorial is quite good.](http://ismayc.github.io/ecots2k16/template_pkg/) And it is relatively easy [to paramaterize any report, as described by Yihui here.](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html)
 
 [^1]: The function's internals were modeled after Hadley Wickham's ["Joy of Functional Programming" repo.](https://github.com/hadley/joy-of-fp) We're taking the next step and turning it into a package function.
 
-`render` is the engine of `rmarkdown` and the substance of our `generate_report` function (see below). It has three essential arguments: `input`, `output_file`, and `params`. Our function wraps these arguments, abstracting `render` to cover any of our parameterized templates.
+`render` is the engine of `rmarkdown` and [the substance of our generate_report function (see below).](https://github.com/daranzolin/reportsAsFunctions/blob/master/R/generate_report.R) It has three essential arguments: `input`, `output_file`, and `params`. Our function wraps these arguments, abstracting `render` to cover any parameterized template.
 
 {% highlight r %}
 generate_report <- function(template_name,
@@ -37,8 +36,8 @@ generate_report <- function(template_name,
 ### The Input File
 
 Assuming you've already created and packaged an .Rmd template with parameters, the `skeleton.Rmd` file from
-`{package_name}/inst/rmarkdown/templates/{name_of_tempate}/skeleton.Rmd` is the first argument to the `render` 
-function. Thus, you need to access the file paths of your installed package. Here I created a helper function to
+`{package_name}/inst/rmarkdown/templates/{name_of_tempate}/skeleton.Rmd` is the first argument to `render`.
+Thus, you need to access the file paths of your installed package. Here I created a helper function to
 the path of any of my templates:
 
 {% highlight r %}
@@ -90,4 +89,4 @@ walk2(out_files, params, ~generate_report("report", output_file = .x, param_list
 {% endhighlight %}
 
 Three reports for three species isn't a lot, but how about 50 reports for 50 clients? The lessons, as always, figure out something once,
-then scale and automate. Makes the pieces fit!
+then scale and automate. Make the pieces fit!
