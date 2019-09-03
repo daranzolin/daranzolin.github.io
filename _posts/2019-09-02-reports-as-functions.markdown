@@ -68,13 +68,14 @@ location, but I work almost exclusively within projects, so `here::here()` is a 
 
 It is relatively simple to set up parameters, [as described by Yihui here.](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html) The lone requirement is that they are a named list. 
 
-Finally, we can call our function:
+Finally, we can call our function. Note that "report" is the name of this particular template.
 
 {% highlight r %}
 generate_report("report", "setosa-report.html", param_list = list(species = "setosa"))
 {% endhighlight %}
 
-The rendered output should appear in your project's root directory.
+The rendered output should appear in your project's root directory. The additional `see_now` parameter is mostly for
+convenience, opening your browser if you want to see the output immediately.
 
 ### Looping
 
