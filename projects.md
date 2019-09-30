@@ -18,8 +18,6 @@ subtitle:
 
 - **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them. rOpenSci reviewed.
 
-- **[rcicero](https://github.com/daranzolin/rcicero)** - R Client for the Cicero REST API.
-
 - **[rEvalKit](https://github.com/daranzolin/rEvalKit)** - R Client for the EvaluationKit REST API
 
 ## Data Visualization
@@ -29,6 +27,8 @@ subtitle:
 - **[pinpoint](https://github.com/daranzolin/pinpoint)** - Interactively explore a distribution with d3.js.
 
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
+
+- **[clockwork](https://github.com/daranzolin/clockwork)** - Create radial line charts with d3.js. 
 
 - **[quickglobe](https://github.com/daranzolin/quickglobe)** - Interactive 3D globe built with d3.js.
 
