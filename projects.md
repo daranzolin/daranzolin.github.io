@@ -44,6 +44,6 @@ subtitle:
 
 ## Talks
 
-- **[R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data:](https://rpubs.com/daranzolin/cair-2016-slides)** Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
+- **[R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data](https://rpubs.com/daranzolin/cair-2016-slides)** Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
 
 - **[Building Internal R Packages]({{site.url}}/slides/Presentation_Slides.html)** Talk delivered at the California Association for Institutional Research (CAIR), 2019.
