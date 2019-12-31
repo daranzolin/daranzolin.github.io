@@ -9,14 +9,14 @@ tags: R
 Getting this off before the new year! :flex:
 
 Someone on Twitter creates nifty radar charts for Premier League soccer players. The radars indicate pass direction and frequency via 
-longer and brighter areas. I wish I could link to an example, but the technique can be adapted for other spatial analyses. Namely, as 
-a simplified alternative to heatmaps and other chloropleths. 
+longer and brighter areas. I wish I could link to an example, but the technique can be adapted for other spatial analyses. Namely, 
+a simplified alternative to heatmaps and chloropleths. 
 
 <!--more-->
 
 The Camp Fire in Paradise affected many friends and family. [I've drawn blogging inspiration from this tragedy before,](https://daranzolin.github.io/2018-11-26-compareAreas/)
-but now with a more incisive, albeit similar spatial question: if I live in Paradise, from which direction are fires most commonly reported? Code
-and radar charts below.
+but now with a more incisive, albeit similar spatial question: if I live in Paradise, from which direction are fires most commonly reported?
+North? East? Southwest? Code and radar charts below.
 
 The data for this project is from [BuzzFeed's GitHub repo on wildfires.](https://github.com/BuzzFeedNews/2018-07-wildfire-trends)
 
@@ -41,7 +41,7 @@ fires <- vroom(fire_files,
                               "fips_name"))
 {% endhighlight %}
 
-Second, subset and transform the fires from Butte County:
+Second, I subset and transform the fires from Butte County:
 
 {% highlight r %}
 butte_fires <- fires %>%
@@ -160,9 +160,9 @@ tm_shape(donut) +
 
 <img src="/img/blog/radarfirezones.png" alt="fireradar" align="center"/> 
 
-Downtown Paradise is at the center of each radar chart. And so the southeast holds--most fires from that zone. 
+Downtown Paradise is at the center of each radar chart. And the southeast holds--most fires from that zone. 
 
 A heatmap would admittedly be more precise (and possibly easier to make), but I like the generalized simplicity for the zones. I think
-it's more effective at a glance and indicates any change over time quicker.
+it's more effective at a glance and indicates change over time quicker.
 
 This may be bundled into a package at a later date.
