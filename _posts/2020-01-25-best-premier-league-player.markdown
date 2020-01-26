@@ -192,13 +192,9 @@ plot_data %>%
 
 Who else but the Zlatan? Sadly, here's Manchester United buying *five* of the alleged best eight players to move to the Premier League over the last 10 years and having little to show for it. Falcao and Di Maria were busts, Schweinsteiger was in no way an 88 by that point, Pogba's on his way out, and Ibrahimovic was already coming out of his prime (although he did enjoy one good season there).
 
-It is interesting that no player with a rating in the 90s has moved to the richest league in the world. To be fair, however, there aren't many players of that quality. I can only think of three 90s players that switched leagues in the last few years: Suarez to Barca, Neymar to PSG, and Ronaldo to Juve.
+It is interesting that no player with a rating in the 90s has moved to the richest league in the world. To be fair, however, there aren't many players of that quality. I can only think of four 90s players that switched leagues in the last few years: Hazard to Madrid, Suarez to Barca, Neymar to PSG, and Ronaldo to Juve.
 
-To wrap up, let's look at each club's foreign signings among the proverbial "Top 6".
-
-<img src="/img/blog/best-by-club.png" alt="bestprem" height="800" width="100%" align="center"/> 
-
-Down with the Glazers and Woodward!
+Aside: Down with the Glazers and Woodward!
 
 
 
