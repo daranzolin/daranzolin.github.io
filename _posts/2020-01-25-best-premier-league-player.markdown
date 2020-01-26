@@ -64,7 +64,6 @@ players <- tibble(
 ) %>% 
   unnest(c(NAME, YEAR, CLUB), keep_empty = TRUE) %>% 
   separate_rows(CLUB, sep = ",", convert = TRUE) %>% 
-  filter(YEAR >= 2010) %>% 
   mutate_all(str_trim) %>% 
   group_by(NAME) %>%
   filter(row_number() %in% c(1, n())) %>% 
