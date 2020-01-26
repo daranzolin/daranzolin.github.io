@@ -196,7 +196,7 @@ It is interesting that no player with a rating in the 90s has moved to the riche
 
 To wrap up, let's look at each club's foreign signings among the proverbial "Top 6".
 
-<img src="/img/blog/best-by-club.png" alt="bestprem" height=700 align="center"/> 
+<img src="/img/blog/best-by-club.png" alt="bestprem" height="700" align="center"/> 
 
 Down with the Glazers and Woodward!
 
