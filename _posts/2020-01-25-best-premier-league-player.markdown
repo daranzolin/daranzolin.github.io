@@ -75,7 +75,7 @@ players <- tibble(
   mutate(YEAR = as.numeric(YEAR) - 2000) 
 
 players
-# A tibble: 971 x 3
+A tibble: 971 x 3
    NAME                YEAR CLUB                  
    <chr>              <dbl> <chr>                 
  1 Aaron Connolly        19 Brighton & Hove Albion
@@ -88,7 +88,7 @@ players
  8 Aboubakar Kamara      18 Fulham                
  9 Ádám Bogdán           10 Bolton Wanderers      
 10 Ádám Bogdán           15 Liverpool             
-# … with 961 more rows
+… with 961 more rows
 {% endhighlight %}
 
 `players` now has each player's name, their club, and the year(s) they arrived.
@@ -111,7 +111,7 @@ ratings <- map2_dfr(files, file_years, ~{
   })
 
 ratings
-# A tibble: 148,027 x 3
+A tibble: 148,027 x 3
    NAME              RATING  YEAR
    <chr>              <dbl> <dbl>
  1 Lionel Messi          95    10
@@ -124,7 +124,7 @@ ratings
  8 Fernando Torres       92    10
  9 Puyol                 91    10
 10 Carlos Tévez          91    10
-# … with 148,017 more rows
+… with 148,017 more rows
 {% endhighlight %}
 
 FIFA ratings can fluctuate during the year, and this particular dataset preserves each unique rating. Messi, for example, apparently
@@ -144,7 +144,7 @@ plot_data <- left_join(players, ratings, by = c("NAME", "YEAR")) %>%
     )
 
 plot_data
-# A tibble: 690 x 4
+A tibble: 690 x 4
    NAME               CLUB              LABEL                     RATING
    <chr>              <chr>             <glue>                     <dbl>
  1 Aaron Mooy         Huddersfield Town Aaron Mooy (2017)             76
@@ -157,7 +157,7 @@ plot_data
  8 Adam Mitchell      Sunderland        Adam Mitchell (2012)          54
  9 Adama Diakhaby     Huddersfield Town Adama Diakhaby (2018)         70
 10 Adama Traoré       Aston Villa       Adama Traoré (2015)           63
-# … with 680 more rows
+… with 680 more rows
 {% endhighlight %}
 
 Ok! Now we can finally answer! 
