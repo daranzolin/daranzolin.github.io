@@ -7,26 +7,25 @@ tags: R
 ---
 
 The purpose of this post is threefold: (1) to answer the question, "Who's the best player that's moved to the Premier League, 
-*at the time of signing*?"[^1]; (2) to convince Ryan O'Hanlon to abandon Google Sheets in favor of R; and (3) to dismay fellow United fans
+*at the time of signing*?";[^1] (2) to convince Ryan O'Hanlon to abandon Google Sheets in favor of R; and (3) to dismay fellow United fans
 everywhere.
 
-[^1]: This excludes players like Christiano Ronaldo, who has since become one of the five best players ever, but was only good at moving when 
-he arrived at Manchester United as a teenager.
+[^1]: This excludes players like Christiano Ronaldo, who has since become one of the five best players ever, but was only good at moving when he arrived at Manchester United as a teenager.
 
 <!--more-->
 
 O'Hanlon [posed this question on his excellent podcast last week.](https://nograssintheclouds.substack.com/p/episode-16-does-the-premier-league) 
-Can you find one player who was considered top-5 in the world *when* they signed for a Premier League club? Not exactly. In the group chat, 
-my friends and I named some candidates: Michael Ballack, Andriy Shevchenko, Fernando Torres, Eric Cantona, Dennis Bergkamp, Paul Pogba, etc, 
-but most of these players' primes were either behind or before them.[^2] 
+Can you find one player who was considered top-5 in the world *when* they signed for a Premier League club? Difficult to say. In the group chat, 
+my friends and I ventured some candidates: Michael Ballack, Andriy Shevchenko, Fernando Torres, Eric Cantona, Dennis Bergkamp, Paul Pogba, etc. Most of these players' primes, however, were either behind or before them.[^2] 
 
 [^2]: O'Hanlon's explanation is that there are now basically three clubs (Madrid, Barca, and PSG) that can outbid everyone else for the best of the best.
 
-For a more precise approach, I surmised that we could tally each player's FIFA rating the year they signed with their Premier League club. And 
-while I often take umbrage with FIFA's appraisals, it's a relatively scientific approach. So I now needed two sets of data: Premier League 
-signings and FIFA ratings. The former is [available on Wikipedia](https://en.wikipedia.org/wiki/List_of_foreign_Premier_League_players), and 
+For a more precise approach, I suggested we tally each player's FIFA rating the year they signed with their Premier League club. And 
+while I often take umbrage with FIFA's appraisals, it's a relatively unbiased approach. 
+
+I now needed two sets of data: Premier League signings and FIFA ratings. The former is [available on Wikipedia](https://en.wikipedia.org/wiki/List_of_foreign_Premier_League_players), and 
 I found the latter [in a GitHub repository.](https://github.com/kafagy/fifa-FUT-Data) Sadly, the ratings data only goes back to FIFA 10, so 
-I'm setting for a decade of data.
+I'm settling for a mere decade of data.
 
 Packages used for ths blog:
 
@@ -53,7 +52,7 @@ teams <- str_extract_all(foreign_players, "(?<=– ).+(?= –)")
 years <- str_extract_all(foreign_players, "\\d{4}") 
 {% endhighlight %}
 
-Unfortunately players have journeymen, roundabout careers ill-expressed by a single `<li>` on Wikipedia. They can leave the Premier League and return multiple times, sometimes playing for multiple clubs each time. They can play for multiple clubs in a single year. This complicated the 
+Footballers have journeymen, roundabout careers ill-expressed by a single `<li>` on Wikipedia. They can leave the Premier League and return multiple times, sometimes playing for multiple clubs each time. They can play for multiple clubs in a single year. This complicated the 
 'rectangling' process, since I wanted to preserve a row each time they returned. 
 
 {% highlight r %}
@@ -129,7 +128,7 @@ ratings
 
 FIFA ratings can fluctuate during the year, and this particular dataset preserves each unique rating. Messi, for example, apparently
 bounced between 95 and 94 during the 2010-11 season. Which is the 'correct' rating? Should I take the max? The mean? After reviewing some of
-the results, I eventually settled on the min. 
+the results, I settled on the min. 
 
 {% highlight r %}
 plot_data <- left_join(players, ratings, by = c("NAME", "YEAR")) %>% 
@@ -161,10 +160,6 @@ plot_data
 {% endhighlight %}
 
 Ok! Now we can finally answer! 
-
-FIFA ratings can fluctuate during the year, and this particular dataset preserves each unique rating. Messi, for example, apparently
-bounced between 95 and 94 during the 2010-11 season. Which is the 'correct' rating? Should I take the max? The mean? After reviewing some of
-the results, I eventually settled on the min. 
 
 {% highlight r %}
 plot_data %>% 
@@ -201,7 +196,7 @@ It is interesting that no player with a rating in the 90s has moved to the riche
 
 To wrap up, let's look at each club's foreign signings among the proverbial "Top 6".
 
-<img src="/img/blog/best-by-club.png" alt="bestprem" align="center"/> 
+<img src="/img/blog/best-by-club.png" alt="bestprem" height=700 align="center"/> 
 
 Down with the Glazers and Woodward!
 
