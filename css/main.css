@@ -396,12 +396,14 @@ footer .theme-by {
 }
 
 .blog-tags a {
+  display: none;
   color: {{ site.link-col }};
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
+  display: none;
   border-radius: 2px;
   color: {{ site.hover-col }};
   background-color: #EEE;
