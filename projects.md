@@ -42,6 +42,8 @@ subtitle:
 
 - **[pmapply](https://github.com/daranzolin/pmapply)** - Apply a function across pairs of vectors.
 
+- **[intermittent](https://github.com/daranzolin/intermittent)** - An S3 class to work with term data.
+
 ## Talks
 
 - **[R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data](https://rpubs.com/daranzolin/cair-2016-slides)** Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
