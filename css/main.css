@@ -89,10 +89,8 @@ img {
 }
 
 img.emoji {
-  display: inline;
-  height: 1.3em;
-  width: 1.3em;
-  margin-bottom: 0.25em;
+  height: 50;
+  width: 50;
 }
 
 .disqus-comments {
