@@ -88,9 +88,9 @@ img {
   max-width: 100%;
 }
 
-img emoji {
-  height: 30px;
-  width: 30px;
+img.emoji {
+  height: 35px;
+  width: 35px;
 }
 
 .disqus-comments {
