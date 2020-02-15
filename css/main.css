@@ -338,7 +338,13 @@ footer .theme-by {
   font-size: 30px;
   margin-top: 0;
 }
-.post-preview .post-subtitle {
+
+.post-subtitle {
+  font-size: 30px;
+  vertical-align: middle;
+  line-height: 2;
+}
+.post-preview {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
