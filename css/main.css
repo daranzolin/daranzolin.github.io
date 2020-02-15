@@ -88,6 +88,11 @@ img {
   max-width: 100%;
 }
 
+img.emoji {
+  height: 30px;
+  width: 30px;
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
