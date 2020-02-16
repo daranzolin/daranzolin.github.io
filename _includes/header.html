@@ -52,12 +52,11 @@
         <div class="{{ include.type }}-heading">
           <h1>{% if page.title %}{{ page.title }}{% else %}<br/>{% endif %}</h1>
       {% if page.subtitle %}
-      <p><span class="emoji">🏀🐈📊📈🗺️</span></p>
 		    {% if include.type == "page" %}
             <hr class="small">
+            <p><span class="emoji">🏀🐈📊📈🗺️</span></p>
             <span class="{{ include.type }}-subheading">{{ page.subtitle }}</span>
       {% else %}
-      <p><span class="emoji">🏀🐈📊📈🗺️</span></p>
 			<h2 class="{{ include.type }}-subheading">{{ page.subtitle }}</h2>
 			{% endif %}
 		  {% endif %}
