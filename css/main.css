@@ -93,6 +93,12 @@ img.emoji {
   width: 50;
 }
 
+span.emoji {
+  font-size: 40px;
+  vertical-align: middle;
+  line-height: 2;
+}
+
 .disqus-comments {
   margin-top: 30px;
 }
