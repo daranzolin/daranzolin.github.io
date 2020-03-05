@@ -22,6 +22,8 @@ subtitle:
 
 ## Data Visualization
 
+<video><source src="/img/datavizcollage.mp4" type="video/mp4"></video>
+
 - **[d3rain](https://github.com/daranzolin/d3rain)** - 'Raindrop' visualizations in R with d3.js.
 
 - **[pinpoint](https://github.com/daranzolin/pinpoint)** - Interactively explore a distribution with d3.js.
