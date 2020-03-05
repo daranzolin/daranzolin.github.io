@@ -18,7 +18,7 @@ subtitle:
 
 - **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them. rOpenSci reviewed.
 
-- **[rEvalKit](https://github.com/daranzolin/rEvalKit)** - R Client for the EvaluationKit REST API
+- **[rEvalKit](https://github.com/daranzolin/rEvalKit)** - R Client for the EvaluationKit REST API.
 
 ## Data Visualization
 
@@ -37,6 +37,8 @@ subtitle:
 - **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive Shiny application to explore ethnic diversity in California school districts.
 
 ## Other
+
+- **[textych](https://github.com/daranzolin/textych)** - Create interactive text parallels.
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
 
