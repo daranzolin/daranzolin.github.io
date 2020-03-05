@@ -22,7 +22,7 @@ subtitle:
 
 ## Data Visualization
 
-<div style="height: 0; padding-bottom: calc(100.00% + 35px); position:relative; width: 100%;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/5e6147801d53cd0016d3a93e" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made with Kapwing" width="100%"></iframe></div>
+<video><source src="/img/datavizcollage.mp4" type="video/mp4"></video>
 
 - **[d3rain](https://github.com/daranzolin/d3rain)** - 'Raindrop' visualizations in R with d3.js.
 
