@@ -23,7 +23,7 @@ description: "David Ranzolin"
 
 # List of links in the navigation bar
 navbar-links:
-  Code: "projects"
+  R Packages: "projects"
   About Me: "aboutme"
   Resume: "pdfs/Ranzolin-Resume.pdf"
 
