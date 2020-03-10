@@ -792,3 +792,8 @@ td.gutter {
   font-style: italic;
   font-size: 16px;
 }
+
+.about-text {
+  position: relative;
+  margin-left: 30px;
+}
