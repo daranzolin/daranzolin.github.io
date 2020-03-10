@@ -4,9 +4,6 @@ title: About me
 subtitle: 
 ---
 
-My name is David Ranzolin, and I am an institutional research analyst at San Francisco State University. I have several 'sportsing' hobbies (basketball, golf, archery)
-several 'nerdy' hobbies (coding, Soren Kierkegaard, dead languages, and Raspberry Pi), and one perfect hobby (hanging out with my cats.)  
-
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
   I am a Senior Institutional Research Analyst, GIS specialist, and open source software developer residing in the Bay Area. 
