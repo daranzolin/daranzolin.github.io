@@ -4,9 +4,9 @@ title: About me
 subtitle: 
 ---
 
-My name is David Ranzolin, and I am an institutional research analyst at San Francisco State University. I have several active hobbies (basketball, golf, archery)
-several nerdy hobbies (coding, Soren Kierkegaard, dead languages, and Raspberry Pi), and only one perfect hobby (hanging out with my cats.)  
+My name is David Ranzolin, and I am an institutional research analyst at San Francisco State University. I have several 'sportsing' hobbies (basketball, golf, archery)
+several 'nerdy' hobbies (coding, Soren Kierkegaard, dead languages, and Raspberry Pi), and one perfect hobby (hanging out with my cats.)  
 
 I studied English literature and religious studies, finishing my M.T.S from Emory University in 2013. Sometime in the recent past I was exposed to computer programming, and I quickly learned that writing code was more fun than writing papers. Now I'm busy honing my analysis skills (R, databases, statistics), furthering my web development skills (HTML, CSS, JS), and jumping into the world of Geographic Information System (GIS) technology.
 
-[View my resume here.]({{ site.url }}/pdfs/Ranzolin-Resume.pdf)
+[Follow @daranzolin](https://twitter.com/daranzolin) <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
