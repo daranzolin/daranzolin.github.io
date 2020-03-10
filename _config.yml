@@ -23,9 +23,7 @@ description: "David Ranzolin"
 
 # List of links in the navigation bar
 navbar-links:
-  Blog:
   Code: "projects"
-  Archive: "tags"
   About Me: "aboutme"
   Resume: "pdfs/Ranzolin-Resume.pdf"
 
