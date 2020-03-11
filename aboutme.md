@@ -6,17 +6,23 @@ subtitle:
 
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
-  I am a Senior Institutional Research Analyst, GIS specialist, and open source software developer residing in the Bay Area. 
+  I am a Senior Institutional Research Analyst, GIS specialist, and R developer residing in the Bay Area. 
   </p>
   
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I studied English literature and religious studies, finishing my M.T.S from Emory University in 2013. Sometime in the recent past I was exposed to computer programming, and I quickly learned that writing code was more fun than writing papers. 
+I studied English literature and religious studies, finishing my M.T.S from Emory University in 2013. After school I quickly learned that writing code was more fun than writing papers. 
 </p>
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-For data analysis and visualization, I use SQL, R, and D3.js. Other tools and applications: ESRI ArcMap, IBM Cognos Analytic, Git/GitHub  
+For data analysis and visualization, I use SQL, R, D3.js, and a little HTML/CSS. Other tools and applications: 
+<ul>
+  <li>ESRI ArcMap</li>
+  <li>Git/GitHub</li>
+  <li>Observable</li>
+  <li>IBM Cognos Analytics</li>
+</ul>
 </p>
 
 <p class="about-text">
