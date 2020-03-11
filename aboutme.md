@@ -26,3 +26,6 @@ I love to hoop, golf, lift, code, try to understand Kierkegaard and dead languag
 
 
 <a href="https://twitter.com/daranzolin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @daranzolin</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<div class="github-widget" data-username="daranzolin"></div>
+<script src="https://unpkg.com/github-card@1.2.1/dist/widget.js"></script>
