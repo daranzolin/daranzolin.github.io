@@ -95,7 +95,7 @@ Here's what we have:
 
 <img src="/img/blog/wedges1.png" alt="wedges" align="center"/> 
 
-Looks like most fires are from the southeast zone. But has that always been the case? Our data only goes to 2015, but let's
+Note that the slices have been somewhat distorted from the projection. But it looks like most fires are from the southeast zone. But has that always been the case? Our data only goes to 2015, but let's
 check 10 years.
 
 {% highlight r %}

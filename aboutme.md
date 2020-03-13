@@ -21,7 +21,7 @@ For data analysis and visualization, I use SQL, R, D3.js, and a little HTML/CSS.
 
 <p class="about-text">
 <span class="fa fa-heart about-icon"></span>
-I love to hoop, golf, lift, code, try to understand Kierkegaard and dead languages, and chill with my cats.
+I love to hoop, golf, game, code, try to understand Kierkegaard and dead languages, and chill with my cats.
 </p>
 
 
