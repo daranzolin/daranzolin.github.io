@@ -3,10 +3,8 @@ layout: page
 title: Software
 ---
 
----
-
 <hr class="small">
-<p><span class="emoji">🏀🐈📊📈🗺️</span></p>
+
 ## RStudio Addins
 
 - **[ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps)** - Generate View() tabs for each step in a pipe chain.

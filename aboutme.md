@@ -4,6 +4,8 @@ title: About me
 subtitle: 
 ---
 
+<hr class="small">
+
 <p class="about-text">
 <span class="fa fa-briefcase about-icon"></span>
   I am a Senior Institutional Research Analyst, GIS specialist, and R developer residing in the Bay Area. 
