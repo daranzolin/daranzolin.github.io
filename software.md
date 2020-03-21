@@ -29,11 +29,12 @@ title: Software
 
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
 
+- **[countem](https://github.com/daranzolin/countem)** - Sit back, relax, and enjoy the bar charts.
+
 - **[clockwork](https://github.com/daranzolin/clockwork)** - Create radial line charts with d3.js. 
 
 - **[quickglobe](https://github.com/daranzolin/quickglobe)** - Interactive 3D globe built with d3.js.
 
-- **[California District Diversity](https://github.com/daranzolin/CA-School-District-Diversity)** - An interactive Shiny application to explore ethnic diversity in California school districts.
 
 ## Other
 
