@@ -46,8 +46,6 @@ title: Software
 
 - **[inferregex](https://github.com/daranzolin/inferregex)** - Infer the regular expression (regex) of a string.
 
-- **[pmapply](https://github.com/daranzolin/pmapply)** - Apply a function across pairs of vectors.
-
 - **[intermittent](https://github.com/daranzolin/intermittent)** - An S3 class to work with term data.
 
 ## Talks
