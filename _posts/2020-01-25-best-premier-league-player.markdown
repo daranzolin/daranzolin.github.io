@@ -187,7 +187,7 @@ plot_data %>%
   ) 
 {% endhighlight %}
 
-<img src="/img/blog/best-premier-league.png" alt="bestprem" align="center"/> 
+<img src="/img/blog/best-premier-league.png" alt="bestprem" align="center" class=".post-image"/> 
 
 Who else but the Zlatan? Sadly, here's Manchester United buying *five* of the alleged best eight players to move to the Premier League over the last 10 years and having little to show for it. Falcao and Di Maria were busts, Schweinsteiger was in no way an 88 by that point, Pogba's on his way out, and Ibrahimovic was already coming out of his prime (although he did enjoy one good season there).
 
