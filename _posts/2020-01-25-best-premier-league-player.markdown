@@ -4,7 +4,7 @@ title:  "Who's the best player to sign in the Premier League?"
 date:   2020-01-25 13:15:02 -0700
 categories: Post
 tags: R
-post-image: "./img/blog/best-premier-league.png"
+image: "/img/blog/best-premier-league.png"
 ---
 
 The purpose of this post is threefold: (1) to answer the question, "Who's the best player that's moved to the Premier League, 
