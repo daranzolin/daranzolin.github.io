@@ -4,6 +4,7 @@ title:  "Radial Zone Maps"
 date:   2019-12-30 13:15:02 -0700
 categories: Post
 tags: R
+image: "/img/blog/radarfirezones.png"
 ---
 
 Getting this off before the new year! :flex:
