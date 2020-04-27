@@ -4,6 +4,7 @@ title:  "Who's the best player to sign in the Premier League?"
 date:   2020-01-25 13:15:02 -0700
 categories: Post
 tags: R
+post-image: "./img/blog/best-premier-league.png"
 ---
 
 The purpose of this post is threefold: (1) to answer the question, "Who's the best player that's moved to the Premier League, 
@@ -187,7 +188,7 @@ plot_data %>%
   ) 
 {% endhighlight %}
 
-<img src="/img/blog/best-premier-league.png" alt="bestprem" align="center" class=".post-image"/> 
+<img src="/img/blog/best-premier-league.png" alt="bestprem" align="center"/> 
 
 Who else but the Zlatan? Sadly, here's Manchester United buying *five* of the alleged best eight players to move to the Premier League over the last 10 years and having little to show for it. Falcao and Di Maria were busts, Schweinsteiger was in no way an 88 by that point, Pogba's on his way out, and Ibrahimovic was already coming out of his prime (although he did enjoy one good season there).
 
