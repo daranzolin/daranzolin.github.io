@@ -40,6 +40,8 @@ title: Software
 
 ## Other
 
+- **[barah](https://github.com/daranzolin/barah)** - Fashion order out of chaos. Built with Rcpp.
+
 - **[textych](https://github.com/daranzolin/textych)** - Create interactive text parallels.
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
