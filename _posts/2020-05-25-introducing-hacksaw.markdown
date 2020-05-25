@@ -6,15 +6,15 @@ categories: Post
 tags: R
 ---
  
-Moving between dplyr and purrr is usually a delight. There are, however, some exceptions that led to the creation of {hacksaw}, my new package for extra tidyverse-like functionality. Splitting and mapping over data frames has never been easier.
+Moving between dplyr and purrr is usually a delight. There are, however, some exceptions that led to the creation of [{hacksaw}, my new package for extra tidyverse-like functionality.](https://github.com/daranzolin/hacksaw) Splitting and mapping over data frames has never been easier.
 
 <!--more-->
 
-For example, last week's #tidytuesday dataset featured beach volleyball matches from around the world. The untided data was *65 columns wide* and required some reshaping for summary operations. My plan was to calculate average height by country, but players, heights, and countries were stretched out over multiple columns; I needed them in one each.
+For example, last week's #tidytuesday dataset featured beach volleyball matches from around the world. The untided data was *65 columns wide* and required some reshaping for summary operations. My plan was to calculate average height by country, but the players' names, heights, and countries were stretched out over multiple columns; I needed them in one column each.
 
 Obviously, there are a couple ways to approach this. The most straightforward (albeit brutish) way, IMO, is to select out the columns, stack them on top of each other, and take the distinct rows before summarizing. I don't doubt that a pivoting/gathering master could achieve the same result, but that's not how my mind works in cases like these. 
 
-So here's the original brutish way:
+So here's the original brutish way, manually creating three different objects off the base table:
 
 {% highlight r %}
 library(tidyverse)
