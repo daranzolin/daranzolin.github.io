@@ -40,6 +40,8 @@ title: Software
 
 ## Other
 
+- **[hacksaw](https://github.com/daranzolin/hacksaw)** - Extra tidyverse-like functionality.
+
 - **[barah](https://github.com/daranzolin/barah)** - Fashion order out of chaos. Built with Rcpp.
 
 - **[textych](https://github.com/daranzolin/textych)** - Create interactive text parallels.

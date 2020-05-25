@@ -67,7 +67,7 @@ I don't know about you but that is *annoying* to type out. I think you'll find t
 {% highlight r %}
 library(hacksaw)
 
-avg_heights <- vb_matches %>%
+avg_height <- vb_matches %>%
   filter(gender == "W") %>%
   select_split(player = matches("_player[12]"), 
                height = matches("hgt"), 
