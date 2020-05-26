@@ -48,7 +48,7 @@ title: Software
 
 ## Other
 
-- **[funcreporter](https://github.com/daranzolin/funcreporter)** - Automate parameterized Rmarkdown eporting.
+- **[funcreporter](https://github.com/daranzolin/funcreporter)** - Automate parameterized Rmarkdown reporting.
 
 - **[inferregex](https://github.com/daranzolin/inferregex)** - Infer the regular expression (regex) of a string.
 
