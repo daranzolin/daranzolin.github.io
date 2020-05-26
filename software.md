@@ -5,6 +5,14 @@ title: Software
 
 <hr class="small">
 
+## API Clients
+
+- **[rcanvas](https://github.com/daranzolin/rcanvas)** - R Client for your Canvas LMS. Get student data, copy courses, grade students, etc.
+
+- **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them. rOpenSci reviewed.
+
+- **[rEvalKit](https://github.com/daranzolin/rEvalKit)** - R Client for the EvaluationKit REST API.
+
 ## RStudio Addins
 
 - **[ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps)** - Generate View() tabs for each step in a pipe chain.
@@ -18,15 +26,6 @@ title: Software
 - **[hacksaw](https://github.com/daranzolin/hacksaw)** - Extra tidyverse-like functionality.
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
-
-
-## API Clients
-
-- **[rcanvas](https://github.com/daranzolin/rcanvas)** - R Client for your Canvas LMS. Get student data, copy courses, grade students, etc.
-
-- **[rperseus](https://github.com/ropensci/rperseus)** - Texts from the ancient world and a toolkit to unpack them. rOpenSci reviewed.
-
-- **[rEvalKit](https://github.com/daranzolin/rEvalKit)** - R Client for the EvaluationKit REST API.
 
 ## Data Visualization
 
