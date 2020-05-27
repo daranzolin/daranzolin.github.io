@@ -128,6 +128,50 @@ iris %>% cast_character(contains(".")) %>% str(max.level = 1)
  $ Species     : Factor w/ 3 levels "setosa","versicolor",..: 1 1 1 1 1 1 1 1 1 1 ...
 ```
 
+{hacksaw} can also shift values across rows in either direction:
+
+{% highlight r %}
+df <- data.frame(
+  s = c(NA, 1, NA, NA),
+  t = c(NA, NA, 1, NA),
+  u = c(NA, NA, 2, 5),
+  v = c(5, 1, 9, 2),
+  x = c(1, 5, 6, 7),
+  y = c(NA, NA, 8, NA),
+  z = 1:4
+)
+{% endhighlight %}
+
+```
+df
+   s  t  u v x  y z
+1 NA NA NA 5 1 NA 1
+2  1 NA NA 1 5 NA 2
+3 NA  1  2 9 6  8 3
+4 NA NA  5 2 7 NA 4
+
+shift_row_values(df)
+  s t u  v  x  y  z
+1 5 1 1 NA NA NA NA
+2 1 1 5  2 NA NA NA
+3 1 2 9  6  8  3 NA
+4 5 2 7  4 NA NA NA
+
+shift_row_values(df, at = 1:3)
+   s  t u  v  x  y  z
+1  5  1 1 NA NA NA NA
+2  1  1 5  2 NA NA NA
+3  1  2 9  6  8  3 NA
+4 NA NA 5  2  7 NA  4
+
+shift_row_values(df, at = 1:2, .dir = "right")
+   s  t  u  v x  y z
+1 NA NA NA NA 5  1 1
+2 NA NA NA  1 1  5 2
+3 NA  1  2  9 6  8 3
+4 NA NA  5  2 7 NA 4
+```
+
 And finally, I work with data that is often riddled with NAs, and I need to locate them quickly. `keep_na` is the reverse of `tidyr::drop_na`:
 
 {% highlight r %}
