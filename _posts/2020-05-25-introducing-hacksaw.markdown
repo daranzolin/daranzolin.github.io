@@ -90,7 +90,17 @@ iris %>%
                Sepal.Length > 6.4) %->% c(large_petals, large_sepals)
 {% endhighlight %}
 
-As for splitting operations, there's also `distinct_split` which returns the unique values of specified columns (in a list).
+There's also `distinct_split` which returns the unique values of specified columns (in a list). One example would be easily checking the number of unique values across columns:
+
+{% highlight r %}
+starwars %>% 
+  distinct_split(name, skin_color, eye_color) %>% 
+  lengths()
+{% endhighlight %}
+
+```
+87 31 15 
+```
 
 Something else I was tired of doing was typing `mutate(..., var = as.character(var), var2 = as.numeric(var2))` so I have some casting functions that are wrappers around `mutate_at`:
 
