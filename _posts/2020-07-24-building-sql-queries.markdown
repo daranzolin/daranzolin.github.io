@@ -316,10 +316,7 @@ And just for fun, let's slap another SELECT statement on top of this with some a
 
 {% highlight r %}
 query3 <- glue("
-  SELECT college,
-         department,
-         off_probation,
-         students,
+  SELECT *,
          ROUND(off_probation_perc, 2) AS off_probation_perc,
          RANK() OVER(PARTITION BY college ORDER BY off_probation_perc DESC) AS intra_college_rank,
          RANK() OVER(ORDER BY off_probation_perc DESC) AS overall_rank
