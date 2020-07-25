@@ -6,7 +6,7 @@ categories: Post
 tags: R
 ---
  
-[The {dbplyr} package](https://dbplyr.tidyverse.org/) is a godsend for tidyverse devotees. While SQL has its own elegance and expressiveness, once you go `tbl() %>% ... %>% collect()`, you can never go back. Ah, but I must immediately hedge: there are admittedly some tasks whose complexity requires...a more intimate interaction with the database. 
+[The {dbplyr} package](https://dbplyr.tidyverse.org/) is a godsend for tidyverse devotees. While SQL has its own elegance and expressiveness, once you go `tbl() %>% ... %>% collect()`, you can never go back. Ah, but I must immediately hedge: there are admittedly some tasks whose complexity requires a more...intimate interaction with the database. 
 
 <!--more--> 
 
@@ -109,18 +109,18 @@ If you squint, you can maybe see some '{dplyr}'-like logic: filter this term, th
 <details>
   <summary>Monstrous query</summary>
   
-  ```
-      SELECT lhs.college,
+  ```sql
+    SELECT lhs.college,
          lhs.department,
          CASE WHEN rhs.acad_standing = 'Good' THEN 1 ELSE 0 END AS off_probation 
-  FROM (
+    FROM (
      SELECT id,
             college, 
             department,
             acad_standing
-   FROM academic_standings
-   WHERE term = '1'
-   AND acad_standing = 'Probation'
+     FROM academic_standings
+     WHERE term = '1'
+     AND acad_standing = 'Probation'
  ) lhs
   LEFT JOIN (
    SELECT id,
