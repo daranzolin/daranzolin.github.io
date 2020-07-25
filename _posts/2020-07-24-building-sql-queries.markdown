@@ -109,8 +109,8 @@ If you squint, you can maybe see some '{dplyr}'-like logic: filter this term, th
 <details>
   <summary>Monstrous query</summary>
   
-  ```sql
-    SELECT lhs.college,
+```
+SELECT lhs.college,
          lhs.department,
          CASE WHEN rhs.acad_standing = 'Good' THEN 1 ELSE 0 END AS off_probation 
     FROM (
