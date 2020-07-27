@@ -13,6 +13,10 @@ tags: R
 The purpose of this post is to demonstrate how to build-up moderately complex SQL queries using the {glue} and {purrr} packages. Our toy database features one table ("academic_standings") populated by fake students with fake academic standings (e.g. "Probation", "Good") from fake terms. Terms are chronological: term 1 is followed by term 2, which is followed by term 3, etc. And each student resides in a college and department. Students are assigned an academic standing after the term. If their academic performance drops below a certain threshold, their status becomes 'Probation'. Otherwise, it is 'Good': 
 
 {% highlight r %}
+library(glue)
+library(DBI)
+library(tidyverse)
+
 con <- dbConnect(RSQLite::SQLite(), ":memory:")
 dbWriteTable(con, "academic_standings", academic_standings)
 head(tbl(con, "academic_standings"))
@@ -38,10 +42,6 @@ This query is easy to write for any two consecutive terms. But you really don't 
 First, let's generate our sequential term pairs:
 
 {% highlight r %}
-library(glue)
-library(DBI)
-library(tidyverse)
-
 terms <- 1:8
 first_term <- head(terms, -1)
 second_term <- discard(lead(terms), is.na) 
