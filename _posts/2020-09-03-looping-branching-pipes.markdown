@@ -4,6 +4,7 @@ title:  "'Looping' and 'Branching' with Pipes"
 date:   2020-09-03 13:15:02 -0700
 categories: Post
 tags: R
+image: "/img/loopandbranch.png"
 ---
 
 Whilst programming, I am a Don't Repeat Yourself (DRY) devotee. I am also frequently side-tracked by ancillary exploration: "Hmmm, what about this instead?" "What if I tried this really quick?" "Ohhhh should I check this variable too?" My point is this: exploratory data analysis is seldom linear; I often want to *loop back* or *branch off* from my pipes, preferably with minimal syntactical friction, and definitely without repeating myself. In this blog I'll show two ways to 'loop' and 'branch' with pipes. 
@@ -81,11 +82,11 @@ penguins %>%
 9  2008 NA         1
 ```
 
-Not *that's* DRY! Note how `count_split` and `eval_split` recycle the original data frame. hacksaw provides this 'looping' `*_split` construct with most dplyr verbs, and for me, this saves some time, keystrokes, and mild annoyance.
+Now *that's* DRY! Note how `count_split` and `eval_split` recycle the original data frame. hacksaw provides this 'looping' `*_split` construct with most dplyr verbs, and for me, this saves some time, keystrokes, and mild annoyance.
 
 ## 'Branching' with nakedpipe
 
-Again, I sometimes wish to 'branch' off from my main pipeline rather than assign an intermediate object. The reason is threefold: (1), because naming things is hard; (2) I prefer fewer objects in my environment; and (3) I want to be DRY.
+Again, I sometimes wish to 'branch' off from my main pipeline rather than assign an intermediate object. The reason is threefold: (1) Because naming things is hard; (2) I prefer fewer objects in my environment; and (3) I want to be DRY.
 
 Consider the following example from [the excellent infer package:](https://github.com/tidymodels/infer)
 
