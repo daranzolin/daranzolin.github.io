@@ -21,17 +21,13 @@ title: Software
 
 ## Data Manipulation
 
-- **[barah](https://github.com/daranzolin/barah)** - Fashion order out of chaos. Built with Rcpp.
+- **[barah](https://github.com/daranzolin/barah)** - Fashion order out of chaos. Just an Rcpp experiment.
 
 - **[hacksaw](https://github.com/daranzolin/hacksaw)** - Extra tidyverse-like functionality.
 
 - **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
 
 ## Data Visualization
-
-<div style="height: 0; padding-bottom: calc(100.00% + 35px); position:relative; width: 100%;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/5e758c165d03d1001442172d" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made with Kapwing" width="100%"></iframe></div>
-
-<div style="height: 0; padding-bottom: calc(100.00% + 35px); position:relative; width: 100%;"><iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin" src="https://www.kapwing.com/e/5e7589acf78d45001543635a" style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made with Kapwing" width="100%"></iframe></div>
 
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
 
