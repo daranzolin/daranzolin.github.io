@@ -44,11 +44,11 @@ title: Software
 
 ## Other
 
-- **[funcreporter](https://github.com/daranzolin/funcreporter)** - Automate parameterized Rmarkdown reporting.
+- **[funcreporter](https://github.com/ir-sfsu/funcreporter)** - Automate parameterized Rmarkdown reporting.
 
 - **[inferregex](https://github.com/daranzolin/inferregex)** - Infer the regular expression (regex) of a string.
 
-- **[intermittent](https://github.com/daranzolin/intermittent)** - An S3 class to work with term data.
+- **[intermittent](https://github.com/ir-sfsu/intermittent)** - An S3 class to work with term data.
 
 - **[textych](https://github.com/daranzolin/textych)** - Create interactive text parallels.
 
