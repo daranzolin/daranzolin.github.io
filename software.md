@@ -52,6 +52,7 @@ title: Software
 
 - **[textych](https://github.com/daranzolin/textych)** - Create interactive text parallels.
 
+- **[Spatial Representations of Greek Prepositions](https://observablehq.com/@daranzolin/spatial-representation-of-prepositions)** - Recreation of a textbook chart with an Observable notebook.
 
 ## Talks
 
