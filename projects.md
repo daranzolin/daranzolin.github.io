@@ -45,7 +45,7 @@ title: Software
 
 - **[intermittent](https://github.com/daranzolin/intermittent)** - An S3 class to work with term data.
 
-- **[Spatial Representations of Greek Prepositions](https://observablehq.com/@daranzolin/spatial-representation-of-prepositions)** - Recreation of a textbook chart with Observable/d3.js
+- **[Spatial Representations of Greek Prepositions](https://observablehq.com/@daranzolin/spatial-representation-of-prepositions)** - Recreation of a textbook chart with an Observable notebook.
 
 ## Talks
 
