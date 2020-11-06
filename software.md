@@ -63,3 +63,5 @@ title: Software
 - **Commute Distance and Student Success** - Co-presenter at CAIR, 2019. 
 
 - **[Building Internal R Packages]({{site.url}}/slides/Presentation_Slides.html)** - Talk delivered at CAIR, 2019.
+
+- **[Building {htmlwidgets}: The Future of Data Visualization in R]({{site.url}}/cair-htmlwidgets-slides/slides.html)** - Talk delivered at CAIR, 2020.
