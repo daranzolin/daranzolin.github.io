@@ -54,6 +54,8 @@ title: Software
 
 - **[Spatial Representations of Greek Prepositions](https://observablehq.com/@daranzolin/spatial-representation-of-prepositions)** - Recreation of a textbook chart with an Observable notebook.
 
+- **[freshAirAppFinder](https://github.com/daranzolin/freshAirFinderApp)** - Find closest route to a location under an AQI threshold. Shiny app bundled inside a package using GitHub Actions. 
+
 ## Talks
 
 - **R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data** - Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
