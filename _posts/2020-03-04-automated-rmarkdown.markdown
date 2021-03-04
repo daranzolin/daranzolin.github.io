@@ -4,6 +4,7 @@ title:  "Automating Rmarkdown Reporting"
 date:   2021-03-03 13:15:02 -0700
 categories: Post
 tags: R
+image: "/img/funcreports.png"
 ---
 
 There's been some recent commotion about automating Rmarkdown reports. And surprisingly, there isn't (yet) an RStudio-sanctioned method of doing so. We've been left to our own devices, at least for the moment. 
@@ -53,7 +54,7 @@ Note how each RMarkdown template has a `skeleton.Rmd` in a separte folder in the
 After you've created your reporting package (or installed funcreports), install funcreporter:
 
 {% highlight r %}
-remotes::install_github("ir-sfsu/funcreporter)
+remotes::install_github("ir-sfsu/funcreporter")
 {% endhighlight %}
 
 funcreporter is really just a wrapper that coordinates some logistics between your `.Renviron`, `.libPaths`, `rmarkdown::render`, and `here::here`. But first it has to know which package to use for reporting:
@@ -90,5 +91,7 @@ funcreporter(
 {% endhighlight %}
 
 Now *that's* power! Three reports for three species isn't much, but how about 100 reports for 100 clients? 
+
+<img src="/img/funcreports.png" alt="funcreporter" align="center"/> 
 
 Give funcreporter a whirl, and let me know if it works.
