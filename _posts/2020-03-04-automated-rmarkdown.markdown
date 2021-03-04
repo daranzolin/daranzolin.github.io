@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Automating Rmarkdown Reporting"
-date:   2020-03-03 13:15:02 -0700
+date:   2021-03-03 13:15:02 -0700
 categories: Post
 tags: R
 ---
