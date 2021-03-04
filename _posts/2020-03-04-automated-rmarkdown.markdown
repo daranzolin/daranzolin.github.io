@@ -69,7 +69,7 @@ Setting env var FUNCREPORTER_PATH_TO_TEMPLATES=/Library/Frameworks/R.framework/V
 
 ## funcreport!
 
-Now you--the user--just need to know the names of your reports and their associated parameters. Here I'll run the "Sample 1" report you can see in the tree directory above (the .yaml file title):
+Now you--the user--just need to know the names of your reports and their associated parameters. Here I'll run the "Sample 2" report you can see in the tree directory above (the .yaml file title):
 
 {% highlight r %}
 funcreporter(
