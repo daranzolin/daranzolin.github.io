@@ -15,13 +15,13 @@ Here I'll share our office's approach to automated Rmarkdown reporting [via the 
 
 First, create a package that contains your RMarkdown reports, parameterized or not. I won't go over package development here, but adding templates to a package is trivial: use `usethis::use_rmarkdown_template` and you're good to go. Follow [the mechanics of parameterized reporting here.](https://bookdown.org/yihui/rmarkdown/parameterized-reports.html)
 
-Before we get to funcreporter, there's a little demo package called funcreports to give you an idea of what a reporting package looks like. If you want to follow along, install it with:
+Before we get to funcreporter, there's [a little demo package called funcreports](https://github.com/daranzolin/funcreports) to give you an idea of what a reporting package looks like. If you want to follow along, install it with:
 
 {% highlight r %}
 remotes::install_github("daranzolin/funcreports")
 {% endhighlight %} 
 
-Note how each RMarkdown template has a `skeleton.Rmd` in a separte folder in the directory tree:
+Within funcreports, note how each RMarkdown template has a `skeleton.Rmd` in a separte folder in the directory tree:
 
 ```
 ├── DESCRIPTION
@@ -69,7 +69,7 @@ Setting env var FUNCREPORTER_PATH_TO_TEMPLATES=/Library/Frameworks/R.framework/V
 
 ## funcreport!
 
-Now you just need to know the names of your reports and the associated parameters. Here I'll run the "Sample 1" report you can see in the tree directory above (the .yaml file title):
+Now you--the user--just need to know the names of your reports and their associated parameters. Here I'll run the "Sample 1" report you can see in the tree directory above (the .yaml file title):
 
 {% highlight r %}
 funcreporter(
