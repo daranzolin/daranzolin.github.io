@@ -18,7 +18,7 @@ I studied English literature and religious studies, finishing my M.T.S from Emor
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-For data analysis and visualization, I use SQL, R, D3.js, Git, and a little HTML/CSS. Software developed and maintained on GitHub. Other tools and applications: ESRI ArcMap, Observable, IBM Cognos Analytics.
+For data analysis and visualization, I use SQL, R, Python, D3.js, Git, and a little HTML/CSS. Software developed and maintained on GitHub. Other tools and applications: ESRI ArcMap/Pro, Observable, IBM Cognos Analytics.
 </p>
 
 <p class="about-text">
