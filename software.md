@@ -13,20 +13,6 @@ title: Software
 
 - **[rEvalKit](https://github.com/daranzolin/rEvalKit)** - R Client for the EvaluationKit REST API.
 
-## RStudio Addins
-
-- **[ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps)** - Generate View() tabs for each step in a pipe chain.
-
-- **[compareAreas](https://github.com/daranzolin/compareAreas)** - Compare areas across square meters, kilometers, feet, miles, and acres.
-
-## Data Manipulation
-
-- **[barah](https://github.com/daranzolin/barah)** - Fashion order out of chaos. Just an Rcpp experiment.
-
-- **[hacksaw](https://github.com/daranzolin/hacksaw)** - Extra tidyverse-like functionality.
-
-- **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
-
 ## Data Visualization
 
 - **[compareBars](https://github.com/daranzolin/compareBars)** - Simplify comparative bar charts in R with d3.js.
@@ -39,8 +25,27 @@ title: Software
 
 - **[pinpoint](https://github.com/daranzolin/pinpoint)** - Interactively explore a distribution with d3.js.
 
+## Data Manipulation
+
+- **[barah](https://github.com/daranzolin/barah)** - Fashion order out of chaos. Just an Rcpp experiment.
+
+- **[hacksaw](https://github.com/daranzolin/hacksaw)** - Extra tidyverse-like functionality.
+
+- **[kapow](https://github.com/daranzolin/kapow)** - Detonate R objects and assign the remains to an environment of your choice.
+
+## RStudio Addins
+
+- **[ViewPipeSteps](https://github.com/daranzolin/ViewPipeSteps)** - Generate View() tabs for each step in a pipe chain.
+
+- **[compareAreas](https://github.com/daranzolin/compareAreas)** - Compare areas across square meters, kilometers, feet, miles, and acres.
+
+## GIS
+
 - **[quickglobe](https://github.com/daranzolin/quickglobe)** - Interactive 3D globe built with d3.js.
 
+- **[freshAirAppFinder](https://github.com/daranzolin/freshAirFinderApp)** - Find closest route to a location under an AQI threshold. Shiny app bundled inside a package using GitHub Actions. 
+
+- **[RentSuitability](https://github.com/daranzolin/RentSuitability)** - ArcGIS Python Toolbox
 
 ## Other
 
@@ -54,9 +59,6 @@ title: Software
 
 - **[Spatial Representations of Greek Prepositions](https://observablehq.com/@daranzolin/spatial-representation-of-prepositions)** - Recreation of a textbook chart with an Observable notebook.
 
-- **[freshAirAppFinder](https://github.com/daranzolin/freshAirFinderApp)** - Find closest route to a location under an AQI threshold. Shiny app bundled inside a package using GitHub Actions. 
-
-- **[RentSuitability](https://github.com/daranzolin/RentSuitability)** - ArcGIS Python Toolbox
 
 ## Talks
 
