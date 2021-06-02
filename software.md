@@ -56,6 +56,8 @@ title: Software
 
 - **[freshAirAppFinder](https://github.com/daranzolin/freshAirFinderApp)** - Find closest route to a location under an AQI threshold. Shiny app bundled inside a package using GitHub Actions. 
 
+- **[RentSuitability](https://github.com/daranzolin/RentSuitability)** - ArcGIS Python Toolbox
+
 ## Talks
 
 - **R for Everything: Getting, Cleaning, Visualizing, and Analyzing Data** - Talk delivered at the California Association for Institutional Research (CAIR), 2016. 
