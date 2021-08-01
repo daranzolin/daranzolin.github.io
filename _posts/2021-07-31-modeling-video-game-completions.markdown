@@ -223,7 +223,7 @@ gametimes %>%
   ) +
   labs(
     x = "Hours to Beat",
-    y = "Hourrs to Complete",
+    y = "Hours to Complete",
     title = "Hours to Beat ~ Hours to Complete",
     subtitle = "<span style = 'color:firebrick;'> Linear</span> and <span style = 'color:orange;'>Quadratic</span> and <span style = 'color:steelblue;'>Cubic</span> Fits"
     ) +
