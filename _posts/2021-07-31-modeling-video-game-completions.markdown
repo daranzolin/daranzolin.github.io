@@ -48,8 +48,9 @@ gametimes <- tibble(
   arrange(name)
 
 glimpse(gametimes)
+{% endhighlight %}
 
-
+```
 Rows: 29
 Columns: 5
 $ name        <chr> "Animal Crossing: New Horizons", "Assassin's Creed IV: Black F…
@@ -57,7 +58,7 @@ $ hrs_to_beat <dbl> 60.5, 23.0, 43.0, 12.5, 46.0, 48.5, 9.0, 24.5, 2.0, 31.0, 22
 $ hrs_to_comp <dbl> 363.0, 59.5, 105.0, 33.5, 149.0, 192.0, 10.0, 60.0, 2.5, 82.0,…
 $ img1        <chr> "https://t.co/vPZeL1V7sj", "https://t.co/IbCtFNfoHx", "https:/…
 $ img2        <chr> "https://t.co/zdWE2Z77cg", "https://t.co/qk0RVyz0OC", "https:/…
-{% endhighlight %}
+```
 
 Plotting the relative differences:
 
