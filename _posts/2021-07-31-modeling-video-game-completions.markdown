@@ -78,6 +78,7 @@ gametimes %>%
     title = "Hours to Beat ~ Hours to Complete"
   ) +
   theme_ipsum()
+
 {% endhighlight %}
 
 <img src="/img/dumbbell.png" alt="dumbbell" align="center"/> 
@@ -88,6 +89,7 @@ Obviously, the longer a game takes to beat, the longer it takes to complete. Let
 with(gametimes, cor(hrs_to_comp, hrs_to_beat))
 lm1 <- lm(hrs_to_comp ~ hrs_to_beat, data = gametimes)
 summary(lm1)
+
 {% endhighlight %}
 
 ```
@@ -102,7 +104,6 @@ Coefficients:
             Estimate Std. Error t value Pr(>|t|)    
 (Intercept) -20.9602    10.8826  -1.926    0.066 .  
 hrs_to_beat   4.2161     0.4134  10.199 3.34e-10 ***
-{% endhighlight %}
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 Residual standard error: 34.91 on 24 degrees of freedom
@@ -297,8 +298,6 @@ list(
   ) %>%
   tab_stubhead("Game") %>%
   tab_header("Predicted Hours to Complete", "Miscellaneous Video Games")
-
-
 {% endhighlight %}
 
 <img src="/img/comparefitstbl.png" alt="comparefitstbl" align="center"/> 
