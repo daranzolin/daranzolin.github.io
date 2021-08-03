@@ -303,6 +303,6 @@ list(
 
 <img src="/img/comparefitstbl.png" alt="comparefitstbl" align="center"/> 
 
-None do particularly well. But the cubic model does best with short and medium length games and does a better job capturing how completion times initially scale upwards. One could perhaps coerce the y-intercept of the linear model to zero for some improvement, but that strategy is generally inadvisable. 
+None do particularly well. The assumption of homoscedasticity appears to be violated. But the cubic model does best with short and medium length games and does a better job capturing how completion times initially scale upwards. One could perhaps coerce the y-intercept of the linear model to zero for some improvement, but that strategy is generally inadvisable. 
 
 In sum, I actually think the cubic model is capturing something real: there's a non-linear rate to how bigger games get bigger in terms of hours to beat vs. hours to complete. There are--at a glance--three suggestive clusters: small games, medium games, and large games; and the lines of demarcation between them is not on a single slope. Whether that phenomena is due to small sample sizes, studio budgeting, genre, or creation date remains a mystery.  
