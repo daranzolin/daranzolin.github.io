@@ -55,6 +55,8 @@ title: Software
 
 - **[intermittent](https://github.com/ir-sfsu/intermittent)** - An S3 class to work with term data.
 
+- **[rCAEDDATA](https://github.com/daranzolin/rCAEDDATA)** - Data from the CA Dept. of Education.
+
 - **[textych](https://github.com/daranzolin/textych)** - Create interactive text parallels.
 
 - **[sntaskreader](https://github.com/ir-sfsu/sntaskreader)** - Read exported PDF task reports from ServiceNow
