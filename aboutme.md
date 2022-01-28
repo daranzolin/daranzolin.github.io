@@ -13,17 +13,17 @@ subtitle:
   
 <p class="about-text">
 <span class="fa fa-graduation-cap about-icon"></span>
-I studied English literature and religious studies, finishing my M.T.S from Emory University in 2013. After school I soon learned that writing code was more fun than writing papers.
+I studied English literature and religious studies, finishing my M.T.S from Emory University in 2013. After school I soon learned that writing code was more fun than writing papers. 
 </p>
 
 <p class="about-text">
 <span class="fa fa-code about-icon"></span>
-For data analysis and visualization, I use SQL, R, Python, D3.js, Git, and a little HTML/CSS. Software developed and maintained on GitHub. Other tools and applications: ESRI ArcMap/Pro, Observable, IBM Cognos Analytics.
+For data analysis and visualization, I use SQL, R, Python, D3.js, Git, and a little HTML/CSS. Software developed and maintained on GitHub. Other tools and applications: ESRI ArcMap/ArcGIS Pro, Observable, IBM Cognos Analytics.
 </p>
 
 <p class="about-text">
 <span class="fa fa-heart about-icon"></span>
-I love to hoop, golf, game, code, try to understand Kierkegaard and dead languages, and chill with my cats.
+I love hoop, golf, pickleball, books, games, code, dead languages, and chilling with my cats.
 </p>
 
 
