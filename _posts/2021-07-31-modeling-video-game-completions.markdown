@@ -172,7 +172,7 @@ ggMarginal(
 
 <img src="/img/lmmargins.png" alt="lmmargins" align="center"/> 
 
-Hmmm, that doesn't look totally linear. The fit consistently *underestimates* hours to complete with short games (0-10 hours), but then consistently *overestimates* hours to compleete with medium games (10-50 hours). Let's venture some nonlinear quadratic and cubic models instead:
+Hmmm, that doesn't look totally linear. The fit consistently *underestimates* hours to complete with short games (0-10 hours), but then consistently *overestimates* hours to compleete with medium games (10-50 hours). Let's venture some polynomial quadratic and cubic models instead:
 
 {% highlight r %}
 qm1 <- lm(hrs_to_comp ~ poly(hrs_to_beat, 2), data = gametimes)
