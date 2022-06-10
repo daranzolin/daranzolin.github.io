@@ -112,9 +112,10 @@ We (don't) Enjoy Typing.
 
 I'm increasingly fond of inserting functions that return quosures in my `filter()` statements. Again, perhaps I am frequently applying the same filter, such as 'underclassmen.':
 
-underclassmen <- function() quo(stu_level %in% c("Freshmen", "Sophomore"))
 
 {% highlight r %}
+underclassmen <- function() quo(stu_level %in% c("Freshmen", "Sophomore"))
+
 students2 %>% 
   filter(
     !!underclassmen()
