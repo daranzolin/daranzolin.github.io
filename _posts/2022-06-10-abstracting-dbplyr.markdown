@@ -114,7 +114,7 @@ I'm increasingly fond of inserting functions that return quosures in my `filter(
 
 
 {% highlight r %}
-underclassmen <- function() quo(stu_level %in% c("Freshmen", "Sophomore"))
+underclassmen <- function() rlang::quo(stu_level %in% c("Freshmen", "Sophomore"))
 
 students2 %>% 
   filter(
@@ -137,9 +137,9 @@ international <- function(type = c("def1", "def2", "def3")) {
   type <- match.arg(type)
   switch(
     type,
-    "def1" = quo(visa == "N" & residence_status == "D"),
-    "def2" = quo(visa %in% c("F", "J", "O")),
-    "def3" = quo(visa %in% c("F", "J", "N", "O"))
+    "def1" = rlang::quo(visa == "N" & residence_status == "D"),
+    "def2" = rlang::quo(visa %in% c("F", "J", "O")),
+    "def3" = rlang::quo(visa %in% c("F", "J", "N", "O"))
   )
 }
 
