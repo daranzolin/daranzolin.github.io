@@ -2,7 +2,7 @@
 layout: post
 title:  "Blurred Lines: Code, Comments, or Both?" 
 subtitle: "Supercharged {dbplyr} with Abstractions"
-date:   2021-07-31 13:15:02 -0700
+date:   2022-06-10 13:15:02 -0700
 categories: Post
 tags: R
 ---
@@ -129,7 +129,7 @@ students2 %>%
 2 Sophomore    29
 ```
 
-Filtering functions are versatile and include parameters. Suppose I have three varying definitions of 'international' students:
+Note the use of `!!`, called the 'injection operator'. Filtering functions are versatile and include parameters. Suppose I have three varying definitions of 'international' students:
 
 {% highlight r %}
 international <- function(type = c("def1", "def2", "def3")) {
