@@ -49,6 +49,8 @@ title: Software
 
 ## Other
 
+- **[dputsql](https://github.com/daranzolin/dputsql)** - Create `CREATE TABLE` and `INSERT INTO` SQL statements from R objects.
+
 - **[env2list](https://github.com/daranzolin/env2list)** - Query the global environment tidyselect-stype.
 
 - **[funcreporter](https://github.com/ir-sfsu/funcreporter)** - Automate parameterized Rmarkdown reporting.
