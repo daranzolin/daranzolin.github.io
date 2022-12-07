@@ -45,6 +45,8 @@ title: Software
 
 - **[freshAirAppFinder](https://github.com/daranzolin/freshAirFinderApp)** - Find closest route to a location under an AQI threshold. Shiny app bundled inside a package using GitHub Actions. 
 
+- **[Expected Accidents](https://github.com/daranzolin/ExpectedAccidents)** - Identifying Hazardous Intersections in San Francisco with ArcGIS Pro, Python, and R.
+
 - **[RentSuitability](https://github.com/daranzolin/RentSuitability)** - ArcGIS Python Toolbox
 
 ## Other
