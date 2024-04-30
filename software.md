@@ -61,6 +61,8 @@ title: Software
 
 - **[intermittent](https://github.com/ir-sfsu/intermittent)** - An S3 class to work with term data.
 
+- **[sqltargets](https://github.com/daranzolin/sqltargets)** - 'targets' extension for SQL files.
+
 - **[rCAEDDATA](https://github.com/daranzolin/rCAEDDATA)** - Data from the CA Dept. of Education.
 
 - **[textych](https://github.com/daranzolin/textych)** - Create interactive text parallels.
